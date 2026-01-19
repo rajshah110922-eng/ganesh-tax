@@ -1,0 +1,34 @@
+{
+  "logo": {
+    "text": "GANESH TAX",
+    "icon": "⚖️",
+    "url": "/assets/ganeshTaxLogo.png"
+  },
+  "navigation": [
+    {
+      "label": "Home",
+      "href": "/",
+      "id": "home"
+    },
+    {
+      "label": "Services",
+      "href": "/services",
+      "id": "services"
+    },
+    {
+      "label": "About",
+      "href": "/about",
+      "id": "about"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact",
+      "id": "contact"
+    }
+  ],
+  "cta": {
+    "text": "Get Started",
+    "href": "/contact",
+    "variant": "default"
+  }
+}

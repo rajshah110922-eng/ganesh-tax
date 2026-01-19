@@ -1,0 +1,119 @@
+{
+  "page": {
+    "title": "Get in Touch",
+    "subtitle": "Have questions? We're here to help. Reach out to us through email or WhatsApp"
+  },
+  "contactInfo": {
+    "email": "info@compliancehub.com",
+    "phone": "+91 9000000000",
+    "whatsappNumber": "919000000000",
+    "address": "123 Business Street, New Delhi, India - 110001",
+    "responseTime": "24 hours"
+  },
+  "form": {
+    "title": "Send us an Enquiry",
+    "subtitle": "Fill out the form below and we'll get back to you shortly",
+    "fields": [
+      {
+        "name": "fullName",
+        "label": "Full Name",
+        "type": "text",
+        "placeholder": "Enter your full name",
+        "required": true
+      },
+      {
+        "name": "email",
+        "label": "Email Address",
+        "type": "email",
+        "placeholder": "your@email.com",
+        "required": true
+      },
+      {
+        "name": "phone",
+        "label": "Phone Number",
+        "type": "tel",
+        "placeholder": "+91 9000000000",
+        "required": true
+      },
+      {
+        "name": "company",
+        "label": "Company Name",
+        "type": "text",
+        "placeholder": "Your company name",
+        "required": false
+      },
+      {
+        "name": "service",
+        "label": "Service Interested In",
+        "type": "select",
+        "options": [
+          "Income Tax Filing",
+          "GST Registration",
+          "GST Return Filing",
+          "GSTR-9 Annual Return",
+          "Business Registration",
+          "MSME Registration",
+          "Other"
+        ],
+        "required": true
+      },
+      {
+        "name": "message",
+        "label": "Your Message",
+        "type": "textarea",
+        "placeholder": "Tell us about your requirements...",
+        "required": true,
+        "rows": 5
+      }
+    ],
+    "submitButton": "Send Enquiry"
+  },
+  "supportChannels": [
+    {
+      "icon": "📧",
+      "title": "Email Support",
+      "description": "Send us your query and we'll respond within 24 hours",
+      "contact": "rajshah110922@gmail.com",
+      "action": "Send Email"
+    },
+    {
+      "icon": "💬",
+      "title": "WhatsApp Chat",
+      "description": "Chat directly with us on WhatsApp for instant support",
+      "contact": "+91 7567378301",
+      "action": "Chat on WhatsApp"
+    },
+    {
+      "icon": "📞",
+      "title": "Phone Support",
+      "description": "Call us during business hours for immediate assistance",
+      "contact": "+91 7567378301",
+      "action": "Call Now"
+    },
+    {
+      "icon": "📍",
+      "title": "Visit Our Office",
+      "description": "Meet us in person at our office in New Delhi",
+      "contact": "Ahmedabad , Gujarat, India",
+      "action": "Get Directions"
+    }
+  ],
+  "faq": [
+    {
+      "question": "How long does it take to get a response?",
+      "answer": "We typically respond to all enquiries within 24 hours. For urgent matters, please use WhatsApp or call us directly."
+    },
+    {
+      "question": "What information should I provide in my enquiry?",
+      "answer": "Please provide your full name, email, phone number, the service you're interested in, and a brief description of your requirements. This helps us understand your needs better."
+    },
+    {
+      "question": "Do you offer consultation calls?",
+      "answer": "Yes! Once you submit your enquiry, we'll schedule a consultation call at a convenient time to discuss your specific needs and provide tailored solutions."
+    },
+    {
+      "question": "What's the best way to contact you for urgent matters?",
+      "answer": "For urgent matters, we recommend using WhatsApp or calling us directly. Our team is available during business hours."
+    }
+  ]
+}

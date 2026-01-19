@@ -1,0 +1,165 @@
+{
+  "hero": {
+    "eyebrow": "Ganesh Tax for Indian Businesses",
+    "title": "Ganesh Tax",
+    "subtitle": "Automate your tax filing, GST registration, and business compliance. Trust millions of businesses in India to simplify regulatory requirements.",
+    "primaryCTA": "Get Started Free",
+    "secondaryCTA": "Schedule Demo",
+    "primaryLink": "/services",
+    "secondaryLink": "/contact"
+  },
+  "stats": [
+    {
+      "number": "1M+",
+      "label": "Businesses Served"
+    },
+    {
+      "number": "₹500Cr",
+      "label": "Tax Filed"
+    },
+    {
+      "number": "24/7",
+      "label": "Expert Support"
+    }
+  ],
+  "trustedBy": {
+    "title": "Trusted by Leading Companies",
+    "subtitle": "Over 1 million businesses trust our platform for their compliance needs",
+    "companies": [
+      "Flipkart",
+      "ICICI Bank",
+      "Jio",
+      "Swiggy",
+      "OYO",
+      "HDFC",
+      "Zerodha",
+      "PharmEasy"
+    ]
+  },
+  "features": {
+    "title": "Everything You Need for Complete Compliance",
+    "subtitle": "From business registration to ongoing compliance, we handle all your requirements",
+    "items": [
+      {
+        "title": "Business Registration",
+        "description": "Register your business structure - Pvt Ltd, LLP, OPC, or Proprietorship with instant approval",
+        "icon": "📋"
+      },
+      {
+        "title": "GST Services",
+        "description": "Registration, monthly filing, annual returns, and amendments - all in one place",
+        "icon": "📊"
+      },
+      {
+        "title": "Tax Filing",
+        "description": "Income tax returns, business tax, partnership firm ITR - filed accurately and on time",
+        "icon": "💰"
+      },
+      {
+        "title": "MCA Compliance",
+        "description": "Company compliance, LLP filing, annual returns, and director requirements",
+        "icon": "⚖️"
+      },
+      {
+        "title": "Trademark & IP",
+        "description": "Protect your brand with trademark registration and intellectual property services",
+        "icon": "🛡️"
+      },
+      {
+        "title": "Expert Support",
+        "description": "Dedicated CA support team available 24/7 for guidance and compliance assistance",
+        "icon": "👥"
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Get compliant in 4 simple steps",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Choose Your Service",
+        "description": "Select from 50+ compliance and tax services based on your business needs"
+      },
+      {
+        "number": "02",
+        "title": "Complete Registration",
+        "description": "Submit documents through our secure platform with expert guidance"
+      },
+      {
+        "number": "03",
+        "title": "Expert Review",
+        "description": "Our CAs review and verify your documents for accuracy and compliance"
+      },
+      {
+        "number": "04",
+        "title": "Stay Compliant",
+        "description": "We handle filings, reminders, and ongoing compliance management for you"
+      }
+    ]
+  },
+  "aiCoPilot": {
+    "title": "Compliance Made Smart with AI",
+    "subtitle": "Our intelligent platform automates routine tasks and alerts you to important deadlines",
+    "features": [
+      "Automated deadline reminders and alerts",
+      "Smart document validation and verification",
+      "AI-powered compliance recommendations",
+      "Real-time filing status tracking",
+      "Secure cloud storage with 24/7 access",
+      "Multi-user collaboration and permissions"
+    ]
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "testimonials": [
+      {
+        "quote": "Simplified our entire compliance process. What used to take weeks now takes hours.",
+        "author": "Rajesh Kumar",
+        "company": "Tech Startup Founder",
+        "rating": 5
+      },
+      {
+        "quote": "The expert team made everything so easy. Best service we've used for tax filing.",
+        "author": "Priya Singh",
+        "company": "Manufacturing Business Owner",
+        "rating": 5
+      },
+      {
+        "quote": "Affordable, reliable, and professional. Highly recommended for any business.",
+        "author": "Amit Patel",
+        "company": "E-commerce Business",
+        "rating": 5
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Simplify Compliance?",
+    "subtitle": "Join thousands of businesses that trust us for their tax and compliance needs. Get started with a free consultation today.",
+    "primaryCTA": "Start Free Consultation",
+    "secondaryCTA": "View Pricing",
+    "primaryLink": "/contact",
+    "secondaryLink": "/pricing"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "How long does business registration take?",
+        "answer": "Business registration typically takes 5-10 business days depending on the type of entity. Our expert team guides you through every step to ensure quick approval."
+      },
+      {
+        "question": "Do you provide GST amendment services?",
+        "answer": "Yes, we handle all types of GST amendments including proprietor change, composition scheme, and registration modification."
+      },
+      {
+        "question": "What is the cost of services?",
+        "answer": "Pricing varies based on the service and your business requirements. Contact us for a personalized quote."
+      },
+      {
+        "question": "Is my data secure?",
+        "answer": "We use bank-level encryption and ISO 27001 compliance to ensure your data is completely secure."
+      }
+    ]
+  }
+}

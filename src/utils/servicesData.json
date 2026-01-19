@@ -1,0 +1,196 @@
+{
+  "services": [
+    {
+      "id": "income-tax-return",
+      "title": "Business Income Tax Return",
+      "shortTitle": "Income Tax Return",
+      "category": "Tax Filing",
+      "icon": "📊",
+      "description": "Professional income tax return filing for businesses with expert guidance and compliance",
+      "href": "/services/income-tax-return",
+      "order": 1
+    },
+    {
+      "id": "income-tax-filing",
+      "title": "Income Tax Filing",
+      "shortTitle": "ITR Filing",
+      "category": "Tax Filing",
+      "icon": "📋",
+      "description": "Complete income tax filing solutions for individuals and entities",
+      "href": "/services/income-tax-filing",
+      "order": 2
+    },
+    {
+      "id": "gstr9-annual-return",
+      "title": "GSTR-9 Annual Return Filing",
+      "shortTitle": "GSTR-9 Return",
+      "category": "GST Filing",
+      "icon": "📅",
+      "description": "Annual GST return filing for registered businesses with detailed compliance",
+      "href": "/services/gstr9-annual-return",
+      "order": 3
+    },
+    {
+      "id": "gst-return-filing",
+      "title": "GST Return Filing",
+      "shortTitle": "GST Return",
+      "category": "GST Filing",
+      "icon": "💼",
+      "description": "Monthly and quarterly GST return filing with accurate reporting",
+      "href": "/services/gst-return-filing",
+      "order": 4
+    },
+    {
+      "id": "gst-registration-amendment",
+      "title": "GST Registration Amendment",
+      "shortTitle": "GST Amendment",
+      "category": "GST Registration",
+      "icon": "✏️",
+      "description": "Modify and update your GST registration details with ease",
+      "href": "/services/gst-registration-amendment",
+      "order": 5
+    },
+    {
+      "id": "gstr10-return",
+      "title": "GSTR-10 Return Filing",
+      "shortTitle": "GSTR-10 Return",
+      "category": "GST Filing",
+      "icon": "🏁",
+      "description": "Final GST return filing for business closure or cancellation",
+      "href": "/services/gstr10-return",
+      "order": 6
+    },
+    {
+      "id": "gst-registration",
+      "title": "GST Registration in India",
+      "shortTitle": "GST Registration",
+      "category": "GST Registration",
+      "icon": "📝",
+      "description": "Complete GST registration process with end-to-end support",
+      "href": "/services/gst-registration",
+      "order": 7
+    },
+    {
+      "id": "proprietorship-registration",
+      "title": "Proprietorship Firm Registration",
+      "shortTitle": "Proprietorship",
+      "category": "Business Registration",
+      "icon": "🏢",
+      "description": "Register your proprietorship firm with all necessary documentation",
+      "href": "/services/proprietorship-registration",
+      "order": 8
+    },
+    {
+      "id": "startup-india-registration",
+      "title": "Startup India Registration",
+      "shortTitle": "Startup India",
+      "category": "Business Registration",
+      "icon": "🚀",
+      "description": "Get recognized as a Startup India entity with exclusive benefits",
+      "href": "/services/startup-india-registration",
+      "order": 9
+    },
+    {
+      "id": "msme-registration",
+      "title": "MSME Registration",
+      "shortTitle": "MSME",
+      "category": "Business Registration",
+      "icon": "🏭",
+      "description": "Register your business as MSME for government schemes and subsidies",
+      "href": "/services/msme-registration",
+      "order": 10
+    },
+    {
+      "id": "dsc-registration",
+      "title": "DSC Registration",
+      "shortTitle": "Digital Signature",
+      "category": "Digital Services",
+      "icon": "🔐",
+      "description": "Digital Signature Certificate for authorized online transactions",
+      "href": "/services/dsc-registration",
+      "order": 11
+    },
+    {
+      "id": "drug-license",
+      "title": "Drug License",
+      "shortTitle": "Drug License",
+      "category": "Licenses & Certifications",
+      "icon": "💊",
+      "description": "Obtain pharmaceutical drug license for manufacturing and distribution",
+      "href": "/services/drug-license",
+      "order": 12
+    },
+    {
+      "id": "12a-80g-registration",
+      "title": "12A & 80G Registration",
+      "shortTitle": "12A & 80G",
+      "category": "Tax Exemptions",
+      "icon": "🎯",
+      "description": "Tax exemption registration for charitable organizations and NGOs",
+      "href": "/services/12a-80g-registration",
+      "order": 13
+    },
+    {
+      "id": "iec-certification",
+      "title": "IEC Certification",
+      "shortTitle": "IEC Code",
+      "category": "Export-Import",
+      "icon": "✈️",
+      "description": "Import Export Code certification for international business operations",
+      "href": "/services/iec-certification",
+      "order": 14
+    },
+    {
+      "id": "pf-registration",
+      "title": "PF Registration",
+      "shortTitle": "PF Registration",
+      "category": "Employee Benefits",
+      "icon": "💰",
+      "description": "Provident Fund registration and employee welfare compliance",
+      "href": "/services/pf-registration",
+      "order": 15
+    },
+    {
+      "id": "esi-registration",
+      "title": "ESI Registration",
+      "shortTitle": "ESI",
+      "category": "Employee Benefits",
+      "icon": "🏥",
+      "description": "Employee State Insurance registration for worker protection",
+      "href": "/services/esi-registration",
+      "order": 16
+    },
+    {
+      "id": "professional-tax",
+      "title": "Professional Tax Registration",
+      "shortTitle": "Professional Tax",
+      "category": "Taxes",
+      "icon": "⚖️",
+      "description": "Register for professional tax compliance in applicable states",
+      "href": "/services/professional-tax",
+      "order": 17
+    },
+    {
+      "id": "fssai-registration",
+      "title": "FSSAI Registration",
+      "shortTitle": "Food License",
+      "category": "Licenses & Certifications",
+      "icon": "🍽️",
+      "description": "Food Safety and Standards Authority license for food businesses",
+      "href": "/services/fssai-registration",
+      "order": 18
+    }
+  ],
+  "categories": [
+    { "name": "Tax Filing", "color": "#10b981" },
+    { "name": "GST Filing", "color": "#059669" },
+    { "name": "GST Registration", "color": "#047857" },
+    { "name": "Business Registration", "color": "#10b981" },
+    { "name": "Digital Services", "color": "#059669" },
+    { "name": "Licenses & Certifications", "color": "#047857" },
+    { "name": "Tax Exemptions", "color": "#10b981" },
+    { "name": "Export-Import", "color": "#059669" },
+    { "name": "Employee Benefits", "color": "#047857" },
+    { "name": "Taxes", "color": "#10b981" }
+  ]
+}

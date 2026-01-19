@@ -1,0 +1,94 @@
+{
+  "company": {
+    "name": "ComplianceHub",
+    "description": "Your trusted partner for all tax, GST, and business compliance services in India",
+    "logo": {
+      "url": "/assets/ganeshTaxLogo.png"
+    }
+  },
+  "sections": [
+    {
+      "title": "Services",
+      "links": [
+        {
+          "label": "Tax Filing",
+          "href": "/services?category=tax-filing"
+        },
+        {
+          "label": "GST Services",
+          "href": "/services?category=gst"
+        },
+        {
+          "label": "Business Registration",
+          "href": "/services?category=business-registration"
+        },
+        {
+          "label": "Licenses & Certificates",
+          "href": "/services?category=licenses"
+        }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        {
+          "label": "About Us",
+          "href": "/about"
+        },
+        {
+          "label": "Contact",
+          "href": "/contact"
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "links": [
+        {
+          "label": "Privacy Policy",
+          "href": "/privacy"
+        },
+        {
+          "label": "Terms & Conditions",
+          "href": "/terms"
+        },
+        {
+          "label": "Disclaimer",
+          "href": "/disclaimer"
+        },
+        {
+          "label": "Refund Policy",
+          "href": "/refund"
+        }
+      ]
+    }
+  ],
+  "social": [
+    {
+      "icon": "facebook",
+      "label": "Facebook",
+      "href": "https://facebook.com"
+    },
+    {
+      "icon": "twitter",
+      "label": "Twitter",
+      "href": "https://twitter.com"
+    },
+    {
+      "icon": "linkedin",
+      "label": "LinkedIn",
+      "href": "https://linkedin.com"
+    },
+    {
+      "icon": "instagram",
+      "label": "Instagram",
+      "href": "https://instagram.com"
+    }
+  ],
+  "contact": {
+    "email": "rajshah110922@gmail.com",
+    "phone": "+91 7567378301",
+    "address": "Ahmedabad , Gujarat, India"
+  },
+  "copyright": "© 2026 ComplianceHub. All rights reserved."
+}
