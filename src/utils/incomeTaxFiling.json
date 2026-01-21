@@ -1,0 +1,157 @@
+{
+  "slug": "income-tax-filing",
+  "title": "Income Tax Filing",
+
+  "sections": [
+    {
+      "heading": "Income Tax Filing",
+      "content": [
+        "The process of filing your income tax return (ITR) online via the official portal of the Indian government is known as income tax e-filing. Individuals, professionals, and businesses can report their income, make deductions, and pay taxes in accordance with the Income Tax Act quickly, securely, and conveniently.",
+        "Transparency, quicker refund processing, and simple access to previous returns and tax records are all guaranteed by e-filing. With little paperwork, salaried people, independent contractors, business owners, and corporations can file their returns online.",
+        "You can avoid penalties, stay in compliance with the law, and keep a solid financial record for loans, visas, and other financial requirements by filing your income tax return on time."
+      ]
+    },
+
+    {
+      "heading": "Who Needs to e-File an Income Tax Return (ITR)?",
+      "list": [
+        {
+          "title": "Individuals",
+          "points": [
+            "Any person whose total income exceeds the basic exemption limit",
+            "Anyone who wishes to claim a tax refund"
+          ]
+        },
+        {
+          "title": "Salaried Employees & Pensioners",
+          "points": [
+            "Employees earning taxable salary",
+            "Pension income earners"
+          ]
+        },
+        {
+          "title": "Self-Employed Professionals & Freelancers",
+          "points": [
+            "Professionals earning income from consultancy or freelance work"
+          ]
+        },
+        {
+          "title": "Business Owners",
+          "points": [
+            "Proprietors",
+            "Partnership firms",
+            "LLPs and Companies"
+          ]
+        },
+        {
+          "title": "Capital Gains Earners",
+          "points": [
+            "Income from shares, mutual funds, or property"
+          ]
+        },
+        {
+          "title": "NRIs (Non-Resident Indians)",
+          "points": [
+            "NRIs earning income in India such as rent, interest, or capital gains"
+          ]
+        },
+        {
+          "title": "Tax Refund Claimants",
+          "points": [
+            "Individuals claiming refund of excess TDS or advance tax"
+          ]
+        }
+      ]
+    },
+
+    {
+      "heading": "Benefits of e-Filing Income Tax Return",
+      "list": [
+        {
+          "title": "",
+          "points": [
+            "Legal Compliance: Ensures adherence to the Income Tax Act and avoids penalties or notices",
+            "Easy Loan & Visa Processing: ITR acts as valid income proof for financial and immigration purposes"
+          ]
+        }
+      ]
+    },
+
+    {
+      "heading": "Basic Exemption Limits (Old Tax Regime)",
+      "list": [
+        {
+          "title": "",
+          "points": [
+            "Individuals under 60 years: ₹2.5 lakh",
+            "Individuals between 60 and 80 years: ₹3.0 lakh",
+            "Individuals over 80 years: ₹5.0 lakh"
+          ]
+        }
+      ]
+    },
+
+    {
+      "heading": "Income Tax Slabs – Old Tax Regime",
+      "table": {
+        "headers": ["Income Slab", "Tax Rate"],
+        "rows": [
+          ["Up to ₹2,50,000", "Nil"],
+          ["₹2,50,001 – ₹5,00,000", "5%"],
+          ["₹5,00,001 – ₹10,00,000", "20%"],
+          ["Above ₹10,00,000", "30%"]
+        ]
+      }
+    },
+
+    {
+      "heading": "Income Tax Slabs – New Tax Regime",
+      "table": {
+        "headers": ["Income Slab", "Tax Rate"],
+        "rows": [
+          ["Up to ₹3,00,000", "Nil"],
+          ["₹3,00,001 – ₹6,00,000", "5%"],
+          ["₹6,00,001 – ₹9,00,000", "10%"],
+          ["₹9,00,001 – ₹12,00,000", "15%"],
+          ["₹12,00,001 – ₹15,00,000", "20%"],
+          ["Above ₹15,00,000", "30%"]
+        ]
+      }
+    },
+
+    {
+      "heading": "Old vs New Tax Regime – Comparison",
+      "table": {
+        "headers": ["Particulars", "Old Tax Regime", "New Tax Regime"],
+        "rows": [
+          ["Tax Slab Rates", "Higher slab rates", "Lower slab rates"],
+          ["Exemptions & Deductions", "Allowed", "Mostly not allowed"],
+          ["Standard Deduction", "Available", "Available"],
+          ["Tax Saving Investments", "Required", "Not required"],
+          ["Compliance Complexity", "Higher", "Simple and easy"],
+          ["Suitable For", "Taxpayers with high deductions", "Taxpayers with minimal deductions"],
+          ["Rebate under Section 87A", "Available", "Available"],
+          ["Default Regime", "Not default", "Default tax regime"]
+        ]
+      }
+    },
+
+    {
+      "heading": "Mandatory ITR Filing in Special Cases",
+      "list": [
+        {
+          "title": "",
+          "points": [
+            "Deposited more than ₹1 crore in one or more current accounts",
+            "Spent more than ₹2 lakh on foreign travel",
+            "Electricity bill exceeded ₹1 lakh",
+            "TDS deducted and refund needs to be claimed",
+            "Holding foreign assets or foreign income",
+            "High-value financial transactions reported to IT Department",
+            "Company or firm required to file ITR irrespective of income or loss"
+          ]
+        }
+      ]
+    }
+  ]
+}

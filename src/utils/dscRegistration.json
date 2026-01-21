@@ -1,0 +1,194 @@
+{
+  "slug": "dsc-registration",
+  "title": "DSC Registration (Digital Signature Certificate)",
+  "sections": [
+    {
+      "heading": "What is a DSC?",
+      "content": [
+        "A DSC (Digital Signature Certificate) is a secure electronic key that verifies identity online and ensures documents are tamper-proof.",
+        "It is legally valid under the Information Technology Act, 2000, and can be used for signing online documents, government filings, and safe digital transactions."
+      ]
+    },
+    {
+      "heading": "Why Do You Need a DSC?",
+      "list": [
+        {
+          "points": [
+            "Setting up a business or LLP (MCA filings)",
+            "Annual ROC filings",
+            "E-filing of income tax returns (audited cases)",
+            "Registering for GST and filing returns",
+            "E-tendering and government procurement",
+            "Filing for trademarks, patents, and copyrights",
+            "Accessing EPFO, ESIC, and other government portals"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Different Kinds of DSC",
+      "list": [
+        {
+          "title": "Digital Signature Certificate for Class 3",
+          "points": [
+            "Most popular DSC type in India",
+            "Best for directors, LLP partners, signing professionals (CA, CS, CMA)",
+            "High-level encryption and MCA/GST portal compatible",
+            "Available as Signing, Encryption, or Both"
+          ]
+        },
+        {
+          "title": "DSC for Individuals vs Organisations",
+          "points": [
+            "Individual DSC: For directors, partners, owners, and professionals",
+            "Organisation DSC: For businesses, LLPs, firms, trusts, and organisations"
+          ]
+        },
+        {
+          "title": "Based on Usage",
+          "points": [
+            "Signing DSC: For signing documents digitally",
+            "Encryption DSC: For data protection",
+            "Signing + Encryption: For both purposes"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Validity",
+      "content": [
+        "DSCs can be issued for one, two, or three years. Longer validity makes renewal easier and cheaper."
+      ]
+    },
+    {
+      "heading": "Documents Required",
+      "list": [
+        {
+          "title": "For Individuals",
+          "points": [
+            "Passport-sized photo",
+            "PAN card",
+            "Aadhaar card, Voter ID, or Passport",
+            "Email address and mobile number",
+            "Proof of address"
+          ]
+        },
+        {
+          "title": "For Businesses",
+          "points": [
+            "PAN card of the organisation",
+            "Address proof of the organisation",
+            "Authorisation letter",
+            "ID proof of the person signing the application"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "How to Register",
+      "list": [
+        {
+          "points": [
+            "Select DSC type and validity period",
+            "Submit application and documents",
+            "Complete verification via video or OTP",
+            "Verification by Certifying Authority",
+            "DSC delivered via USB token or cloud storage"
+          ]
+        }
+      ],
+      "content": [
+        "Typical turnaround time: 1–2 business days."
+      ]
+    },
+    {
+      "heading": "DSC Token (USB)",
+      "content": [
+        "Required for secure storage of your DSC.",
+        "Password-protected to prevent unauthorized use.",
+        "Compatible with MCA, GST, and other government portals.",
+        "Token remains valid even after DSC expires."
+      ]
+    },
+    {
+      "heading": "Legally Valid",
+      "content": [
+        "DSCs issued by licensed authorities are legally equivalent to handwritten signatures under the Information Technology Act, 2000 and Indian Evidence Act."
+      ]
+    },
+    {
+      "heading": "Replacing and Renewing DSC",
+      "list": [
+        {
+          "points": [
+            "Renew before expiry",
+            "Replace if the token is lost or broken",
+            "Update details like name or email address",
+            "Renewal is faster than applying for a new DSC"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Frequently Asked Questions (FAQs)",
+      "list": [
+        {
+          "title": "Do company directors need a DSC?",
+          "points": [
+            "Yes. Directors and LLP partners must have a valid Class 3 DSC for MCA and ROC filings."
+          ]
+        },
+        {
+          "title": "Can one DSC be used for multiple purposes?",
+          "points": [
+            "Yes. A valid DSC can be used for MCA, GST, Income Tax, Trademark, and other government websites."
+          ]
+        },
+        {
+          "title": "How long does it take to get a DSC?",
+          "points": [
+            "Typically 24–48 hours after verification is complete."
+          ]
+        },
+        {
+          "title": "Is DSC required for GST?",
+          "points": [
+            "Yes, for businesses, LLPs, and foreign entities."
+          ]
+        },
+        {
+          "title": "What happens if DSC expires?",
+          "points": [
+            "You cannot sign or submit forms online and will need to renew it."
+          ]
+        },
+        {
+          "title": "Can DSC be transferred?",
+          "points": [
+            "No, each DSC is unique to the individual and cannot be moved."
+          ]
+        },
+        {
+          "title": "Is Aadhaar mandatory for DSC?",
+          "points": [
+            "Aadhaar is commonly used for identity verification, though other government IDs are also accepted."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Advantages of Professional DSC Services",
+      "list": [
+        {
+          "points": [
+            "Choose the correct type of DSC",
+            "Fast issuance",
+            "Secure token handling",
+            "Renewal reminders",
+            "Support from application to delivery"
+          ]
+        }
+      ]
+    }
+  ]
+}

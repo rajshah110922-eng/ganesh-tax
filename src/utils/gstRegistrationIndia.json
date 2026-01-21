@@ -1,0 +1,197 @@
+{
+  "slug": "gst-registration",
+  "title": "GST Registration in India",
+  "sections": [
+    {
+      "heading": "Fast and Easy GST Registration for Your Business",
+      "content": [
+        "You can get your GSTIN (Goods and Services Tax Identification Number) and register for GST completely online.",
+        "GST registration allows you to legally collect GST, issue GST-compliant invoices, and claim input tax credit."
+      ],
+      "list": [
+        {
+          "points": [
+            "Everything is done online",
+            "Help from CA experts",
+            "Quick response",
+            "Transparent pricing"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "What is GST Registration?",
+      "content": [
+        "GST registration is mandatory for businesses that cross certain turnover limits or fall under specified categories.",
+        "After successful registration, your business receives a unique GSTIN which enables lawful tax compliance."
+      ],
+      "list": [
+        {
+          "points": [
+            "Collect GST from customers",
+            "Issue GST-compliant invoices",
+            "Claim input tax credit (ITC)",
+            "Stay compliant and avoid penalties"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "GST Registration Threshold Limits",
+      "content": [
+        "Understanding turnover limits is important to know when GST registration becomes mandatory."
+      ],
+      "table": {
+        "headers": [
+          "Type of Business",
+          "Turnover Limit (Exemption)"
+        ],
+        "rows": [
+          [
+            "Goods Suppliers",
+            "₹40 Lakhs (₹20 Lakhs for special category states)"
+          ],
+          [
+            "Service Providers",
+            "₹20 Lakhs (₹10 Lakhs for special category states)"
+          ],
+          [
+            "Casual Taxable Persons / E-commerce",
+            "Mandatory regardless of turnover"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Who Should Register for GST?",
+      "content": [
+        "GST registration is compulsory for the following categories of businesses."
+      ],
+      "list": [
+        {
+          "points": [
+            "Businesses crossing prescribed turnover limits",
+            "E-commerce sellers and marketplace operators",
+            "Service providers operating across state borders",
+            "Importers and exporters",
+            "Casual taxable persons and Non-Resident Taxable Persons (NRTPs)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Documents Required for GST Registration",
+      "content": [
+        "The documents required depend on the type of business entity."
+      ],
+      "list": [
+        {
+          "title": "For Individuals or Sole Proprietors",
+          "points": [
+            "PAN Card",
+            "Aadhaar Card",
+            "Bank account details",
+            "Proof of business address"
+          ]
+        },
+        {
+          "title": "For Partnership, Company, or LLP",
+          "points": [
+            "PAN of the business entity",
+            "Certificate of Incorporation",
+            "Proof of principal place of business",
+            "Bank account details"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "How to Register for GST",
+      "content": [
+        "Our simple process ensures fast and hassle-free GST registration."
+      ],
+      "list": [
+        {
+          "points": [
+            "Document collection and verification",
+            "Online filing of GST application",
+            "Aadhaar or PAN-based OTP verification",
+            "GSTIN and certificate issued online"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Processing Time",
+      "content": [
+        "GST registration is typically completed within 3 to 7 working days once all documents are verified."
+      ]
+    },
+    {
+      "heading": "Benefits of GST Registration",
+      "content": [
+        "GST registration offers multiple financial and compliance advantages for businesses."
+      ],
+      "list": [
+        {
+          "points": [
+            "Legally collect GST from customers",
+            "Claim input tax credit and reduce tax burden",
+            "Eligibility to apply for government tenders",
+            "Avoid penalties, notices, and compliance issues",
+            "Improved credibility with banks, vendors, and clients"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Frequently Asked Questions (FAQs)",
+      "list": [
+        {
+          "title": "Do all businesses need GST registration?",
+          "points": [
+            "No, registration is required only after crossing prescribed turnover limits, except for mandatory categories like e-commerce sellers and interstate suppliers."
+          ]
+        },
+        {
+          "title": "How long does GST registration take?",
+          "points": [
+            "GST registration usually takes 3 to 7 business days after document submission."
+          ]
+        },
+        {
+          "title": "Is GST registration completely online?",
+          "points": [
+            "Yes, the entire process is conducted online through the GST portal."
+          ]
+        },
+        {
+          "title": "What is a GSTIN?",
+          "points": [
+            "GSTIN is a unique 15-digit identification number issued to every registered taxpayer."
+          ]
+        },
+        {
+          "title": "Can GST registration be cancelled later?",
+          "points": [
+            "Yes, GST registration can be cancelled if business operations are discontinued or turnover falls below limits."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Why Choose Us?",
+      "list": [
+        {
+          "points": [
+            "Experienced GST consultants",
+            "100% online process",
+            "Quick processing in 3–7 days",
+            "Transparent pricing with no hidden charges",
+            "Dedicated support at every step"
+          ]
+        }
+      ]
+    }
+  ]
+}

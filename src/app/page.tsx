@@ -16,7 +16,7 @@ export default function Home() {
       {/* Hero Section */}
       <HeroSection hero={hero} />
       <StateSection stats={stats} />
-      <TrustedBySection trustedBy={trustedBy} />
+      {/* <TrustedBySection trustedBy={trustedBy} /> */}
       <OurServices servicesData={servicesData} />
       <FeaturesSection features={features} />
       <HowItWorks howItWorks={howItWorks} />

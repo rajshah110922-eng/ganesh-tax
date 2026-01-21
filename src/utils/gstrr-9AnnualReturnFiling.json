@@ -1,0 +1,82 @@
+{
+  "slug": "gstr-9-annual-return-filing",
+  "title": "GSTR-9 Annual Return Filing",
+  "sections": [
+    {
+      "heading": "GSTR-9 & GSTR-9C: Filing Annual Returns",
+      "content": [
+        "GSTR-9 is an annual GST return filed by regular taxpayers that provides a consolidated summary of sales, purchases, input tax credit (ITC), and GST paid during a financial year.",
+        "GSTR-9C is a certification and reconciliation statement that compares audited financial statements with GST returns to ensure accuracy and compliance."
+      ]
+    },
+    {
+      "heading": "Turnover Limits and Applicability of GSTR-9",
+      "content": [
+        "GSTR-9 is applicable to regular GST-registered taxpayers."
+      ],
+      "list": [
+        {
+          "points": [
+            "Optional for taxpayers with annual turnover up to ₹2 crore (as notified by the government).",
+            "Mandatory if annual turnover exceeds ₹2 crore.",
+            "Not applicable to ISD, TDS/TCS deductors, casual taxable persons, and non-resident taxable persons."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Applicability of GSTR-9C",
+      "content": [
+        "GSTR-9C is applicable to taxpayers whose total annual turnover exceeds ₹5 crore in a financial year.",
+        "It requires certification by a Chartered Accountant or Cost Accountant."
+      ]
+    },
+    {
+      "heading": "Due Date for Filing",
+      "content": [
+        "The due date for filing GSTR-9 and GSTR-9C is December 31st of the subsequent financial year, subject to government notifications or extensions."
+      ]
+    },
+    {
+      "heading": "Information Covered in GSTR-9",
+      "list": [
+        {
+          "points": [
+            "Details of outward and inward supplies",
+            "Input Tax Credit (ITC) availed and reversed",
+            "GST paid including CGST, SGST, and IGST",
+            "Details of demands, refunds, and late fees",
+            "HSN-wise summary of goods and services"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Details Covered in GSTR-9C",
+      "list": [
+        {
+          "points": [
+            "Reconciliation of turnover between GST returns and audited financial statements",
+            "Reconciliation of tax liability",
+            "Reconciliation of Input Tax Credit (ITC)",
+            "Certification by an auditor"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Late Fees and Penalties",
+      "content": [
+        "The late fee for GSTR-9 is ₹200 per day (₹100 CGST + ₹100 SGST), subject to a maximum of 0.5% of the turnover in the respective State or Union Territory.",
+        "There is no separate late fee for GSTR-9C; however, failure to file may result in penalties and increased scrutiny."
+      ]
+    },
+    {
+      "heading": "Importance of Filing Annual GST Returns",
+      "content": [
+        "Filing annual GST returns ensures compliance with GST laws and accurate reconciliation of books with GST filings.",
+        "It helps avoid penalties, notices, and departmental scrutiny, while improving audit readiness and overall compliance."
+      ]
+    }
+  ]
+}

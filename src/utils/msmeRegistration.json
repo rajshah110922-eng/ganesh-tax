@@ -1,0 +1,245 @@
+{
+  "slug": "msme-registration",
+  "title": "MSME Registration (Udyam Registration)",
+  "sections": [
+    {
+      "heading": "What is MSME Registration?",
+      "content": [
+        "MSME Registration, also known as Udyam Registration, is an official recognition provided by the Ministry of Micro, Small, and Medium Enterprises.",
+        "It classifies businesses as Micro, Small, or Medium Enterprises and provides access to financial, tax, and operational benefits.",
+        "While MSME registration is not mandatory, it is highly recommended for all eligible businesses."
+      ]
+    },
+    {
+      "heading": "Key Benefits of MSME Registration",
+      "list": [
+        {
+          "title": "Priority Lending and Easy Bank Loans",
+          "points": [
+            "Collateral-free loans",
+            "Lower interest rates",
+            "Priority sector lending benefits"
+          ]
+        },
+        {
+          "title": "Government Subsidies and Schemes",
+          "points": [
+            "Credit Linked Capital Subsidy",
+            "Technology upgradation assistance",
+            "Export promotion incentives"
+          ]
+        },
+        {
+          "title": "Protection Against Delayed Payments",
+          "points": [
+            "Legal protection under MSME Act",
+            "Interest on delayed payments from buyers"
+          ]
+        },
+        {
+          "title": "Government Tenders and Certifications",
+          "points": [
+            "Exemption from Earnest Money Deposit (EMD)",
+            "Lower tender fees",
+            "Enhanced tender eligibility"
+          ]
+        },
+        {
+          "title": "Business Credibility",
+          "points": [
+            "Recognition by banks and government authorities",
+            "Builds trust with clients and suppliers"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Who Can Apply for MSME Registration?",
+      "list": [
+        {
+          "points": [
+            "Sole Proprietorship",
+            "Partnership Firm",
+            "Limited Liability Partnership (LLP)",
+            "Private Limited Company",
+            "One Person Company (OPC)",
+            "Trust or Society engaged in business activities"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "MSME Categories",
+      "table": {
+        "headers": [
+          "Enterprise Type",
+          "Investment Limit",
+          "Annual Turnover Limit"
+        ],
+        "rows": [
+          [
+            "Micro Enterprise",
+            "Up to ₹1 Crore",
+            "Up to ₹5 Crore"
+          ],
+          [
+            "Small Enterprise",
+            "Up to ₹10 Crore",
+            "Up to ₹50 Crore"
+          ],
+          [
+            "Medium Enterprise",
+            "Up to ₹50 Crore",
+            "Up to ₹250 Crore"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Documents Required for MSME Registration",
+      "list": [
+        {
+          "points": [
+            "Aadhaar Card of business owner or director",
+            "Business PAN Card",
+            "Basic business details",
+            "Bank account details"
+          ]
+        }
+      ],
+      "note": "No physical documents are required. The entire process is online."
+    },
+    {
+      "heading": "MSME Registration Process",
+      "list": [
+        {
+          "points": [
+            "Collection of Aadhaar and basic business information",
+            "Submission of application on the Udyam portal",
+            "OTP-based Aadhaar verification",
+            "Instant issuance of MSME Registration Certificate"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Processing Time",
+      "content": [
+        "MSME registration is completed on the same day in most cases."
+      ]
+    },
+    {
+      "heading": "Our MSME Registration Services",
+      "list": [
+        {
+          "points": [
+            "Eligibility verification",
+            "Udyam application filing",
+            "Aadhaar and OTP assistance",
+            "Certificate download support",
+            "Expert consultation"
+          ]
+        }
+      ],
+      "note": "No hidden charges."
+    },
+    {
+      "heading": "MSME Registration Compliance",
+      "list": [
+        {
+          "points": [
+            "No annual filing requirement",
+            "No renewal required",
+            "Details must be updated if business information changes"
+          ]
+        }
+      ],
+      "note": "MSME registration is valid for a lifetime."
+    },
+    {
+      "heading": "MSME vs Startup India Registration",
+      "table": {
+        "headers": [
+          "Feature",
+          "MSME",
+          "Startup India"
+        ],
+        "rows": [
+          [
+            "Registration Cost",
+            "Free",
+            "Free"
+          ],
+          [
+            "Target Businesses",
+            "All MSMEs",
+            "Innovative startups"
+          ],
+          [
+            "Tax Benefits",
+            "Indirect benefits",
+            "Direct income tax exemptions"
+          ],
+          [
+            "Government Schemes",
+            "Available",
+            "Available"
+          ],
+          [
+            "Innovation Focus",
+            "No",
+            "Yes"
+          ],
+          [
+            "Age Limit",
+            "No limit",
+            "Up to 10 years"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Frequently Asked Questions (FAQs)",
+      "list": [
+        {
+          "title": "Is MSME registration mandatory?",
+          "points": [
+            "No, but it is highly beneficial for accessing government schemes and incentives."
+          ]
+        },
+        {
+          "title": "Is GST mandatory for MSME registration?",
+          "points": [
+            "No, GST registration is not legally required for MSME registration."
+          ]
+        },
+        {
+          "title": "Can one Aadhaar be used for multiple MSMEs?",
+          "points": [
+            "Yes, but each business must have a separate PAN."
+          ]
+        },
+        {
+          "title": "Is MSME registration free?",
+          "points": [
+            "Yes, Udyam registration on the government portal is completely free."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Why Choose Us for MSME Registration?",
+      "list": [
+        {
+          "points": [
+            "Trusted by over 1,000 businesses",
+            "Fast and error-free filing",
+            "Experienced business consultants",
+            "Transparent pricing",
+            "End-to-end support"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "slug": "gst-registration-amendment",
+  "title": "GST Registration Amendment",
+  "sections": [
+    {
+      "heading": "GST Amendment: A Comprehensive Guide",
+      "content": [
+        "When business information changes, the process of updating or correcting details in an existing GST registration is referred to as a GST Amendment.",
+        "To ensure compliance with GST laws, registered taxpayers are required to update such changes within 15 days of the event."
+      ]
+    },
+    {
+      "heading": "GST Amendment: Modification to Company Name",
+      "content": [
+        "GST registration must be updated to reflect any legal name changes made to a business, such as rebranding or ownership changes."
+      ],
+      "list": [
+        {
+          "title": "Important Points",
+          "points": [
+            "Submit FORM GST REG-14 within 15 days of the name change through the GST portal.",
+            "The application is reviewed and approved by the tax officer, usually within 15 working days.",
+            "The amendment becomes effective from the date the business name change occurs after approval."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "GST Amendment: Change in Place of Business",
+      "content": [
+        "GST registration needs to be amended if the principal place of business or any additional business location changes due to relocation or expansion."
+      ],
+      "list": [
+        {
+          "title": "Important Points",
+          "points": [
+            "Submit FORM GST REG-14 with valid address proof such as a rent agreement or electricity bill.",
+            "The amendment must be filed within 15 days of the change event.",
+            "The tax officer generally approves the amendment within 15 working days."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "GST Amendment: Change in Promoter or Management Details",
+      "content": [
+        "GST registration must be updated whenever there is a change in promoters such as partners, directors, trustees, Karta (HUF), CEOs, or managing committee members."
+      ],
+      "list": [
+        {
+          "title": "Important Points",
+          "points": [
+            "File the amendment within 15 days of addition, removal, or retirement of a promoter.",
+            "Submit identity proof, address proof, and declarations for new promoters.",
+            "The tax officer reviews and approves the application within approximately 15 working days."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "GST Amendment: Change in Email Address or Mobile Number",
+      "content": [
+        "Updating the email address or mobile number linked to GST registration is simple but very important for receiving compliance alerts and notifications."
+      ],
+      "list": [
+        {
+          "title": "Important Points",
+          "points": [
+            "Changes can be made directly on the GST portal after OTP-based verification.",
+            "Digital signature verification by the authorised signatory is required.",
+            "Officer approval or FORM GST REG-14 submission is not required."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "GST Amendment: PAN Changes Not Allowed",
+      "content": [
+        "PAN modifications cannot be made through the GST amendment process since GST registration is PAN-based."
+      ],
+      "list": [
+        {
+          "title": "Important Points",
+          "points": [
+            "Change of PAN or business constitution (e.g., proprietorship to company) is not permitted via amendment.",
+            "A new GST registration must be applied for using FORM GST REG-01 with the updated PAN.",
+            "The existing GST registration must be cancelled to maintain GST identity and tax integrity."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Overview of the GST Amendment Procedure",
+      "content": [
+        "Most GST amendments must be filed within 15 days from the date of change.",
+        "Core field amendments such as business name, address, and promoter details require tax officer approval.",
+        "Non-core fields like email and mobile number are updated automatically upon submission.",
+        "If the tax officer does not act within the prescribed time, the amendment may be deemed approved."
+      ]
+    }
+  ]
+}

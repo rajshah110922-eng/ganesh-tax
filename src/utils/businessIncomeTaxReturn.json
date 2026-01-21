@@ -1,0 +1,27 @@
+{
+  "title": "Business Income Tax Return",
+  "sections": [
+    {
+      "heading": "What is a Business Income Tax Return?",
+      "content": [
+        "A Business Income Tax Return is filed with the Income Tax Department to report a business’s income, expenses, profits or losses, and tax liability for a financial year. It provides a clear picture of the financial performance of the business.",
+        "Sole proprietorships, partnership firms, LLPs, and companies are required to file a business tax return even if there is no income or the business has incurred losses. Filing must be done using the correct ITR form, and audited financial statements may be required in certain cases.",
+        "Timely filing of a business income tax return ensures legal compliance, helps avoid penalties, and improves financial credibility for loans, investments, and regulatory requirements."
+      ]
+    },
+    {
+      "heading": "Business Tax Return – Information for Each Entity",
+      "list": [
+        {
+          "title": "Tax Return for Proprietorship",
+          "points": [
+            "A proprietorship is not a separate legal entity; the proprietor and the business are treated as the same for tax purposes.",
+            "Both personal income and business income of the proprietor are taxed together.",
+            "Business income tax returns are filed using ITR-3 for regular business income or ITR-4 for presumptive taxation.",
+            "The applicable tax rates are the same as individual income tax slab rates."
+          ]
+        }
+      ]
+    }
+  ]
+}

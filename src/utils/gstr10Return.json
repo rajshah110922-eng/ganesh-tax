@@ -1,0 +1,82 @@
+{
+  "slug": "gstr-10-final-return",
+  "title": "GSTR-10 Final Return Filing",
+  "sections": [
+    {
+      "heading": "Final Return on GST Form 10",
+      "content": [
+        "GST Form 10 is a final return that must be filed by taxpayers who have cancelled or surrendered their GST registration.",
+        "It provides details of stock held, tax payable, and outstanding liabilities at the time of GST cancellation to ensure proper closure under GST law."
+      ]
+    },
+    {
+      "heading": "Who Must Submit GST Form 10?",
+      "list": [
+        {
+          "points": [
+            "Taxpayers whose GST registration has been cancelled by authorities",
+            "Businesses that have voluntarily surrendered their GST registration"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Who Is Not Required to File GST Form 10?",
+      "list": [
+        {
+          "points": [
+            "Input Service Distributors (ISD)",
+            "Non-resident taxable persons",
+            "TDS/TCS deductors"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Due Date for Filing GST Form 10",
+      "content": [
+        "GST Form 10 must be filed within three months from the date of GST registration cancellation or the date of the cancellation order, whichever is later."
+      ]
+    },
+    {
+      "heading": "Information Required for GST Form 10",
+      "list": [
+        {
+          "points": [
+            "Details of goods and capital assets in stock on the cancellation date",
+            "Input tax credit involved in closing stock",
+            "Tax payable on stock and capital goods",
+            "Any outstanding or unpaid GST liability"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "How to File GST Form 10",
+      "list": [
+        {
+          "points": [
+            "Log in to the GST portal using valid credentials",
+            "Navigate to Returns → GST Form 10 (Final Return)",
+            "Enter details of stock, tax payable, and liabilities",
+            "Submit the form using DSC or EVC",
+            "Acknowledgement is generated after successful submission"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "GST Form 10 Late Fee",
+      "content": [
+        "The late fee for GST Form 10 is ₹200 per day (₹100 CGST + ₹100 SGST), subject to a maximum of ₹10,000."
+      ]
+    },
+    {
+      "heading": "Importance of Filing GST Form 10",
+      "content": [
+        "Filing GST Form 10 is essential for proper closure of GST registration.",
+        "It helps prevent penalties, late fees, and future compliance issues after cancellation."
+      ]
+    }
+  ]
+}

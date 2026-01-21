@@ -1,0 +1,126 @@
+{
+  "title": "GST Return Filing",
+  "sections": [
+    {
+      "heading": "Filing a GST Return",
+      "content": [
+        "Every taxpayer who is registered for GST must file a GST return. The kind of GST return you need to file depends on the type of business you run, how much money you make, and what kind of registration you have. Filing on time makes sure you follow the rules, avoids fines, and lets the Input Tax Credit (ITC) flow smoothly."
+      ]
+    },
+    {
+      "heading": "When and how to use GST Return Forms",
+      "list": [
+        {
+          "title": "GSTR-1: Sales of Goods and Services",
+          "points": [
+            "Who this applies to: Regular taxpayers",
+            "All registered businesses have a turnover.",
+            "Filing Frequency: Monthly or Quarterly (QRMP if turnover ≤ ₹5 Cr)",
+            "Date Due: Every month, on the 11th of the next month; Every three months, on the 13th of the month after the quarter"
+          ]
+        },
+        {
+          "title": "GSTR-3B: Summary Return and Payment of Taxes",
+          "points": [
+            "Who this applies to: Regular taxpayers",
+            "Filing Frequency: Once a month or once every three months (QRMP ≤ ₹5 Cr)",
+            "Date Due: Every month, on the 20th of the next month; QRMP: 22nd to 24th (by state)"
+          ]
+        },
+        {
+          "title": "GSTR-4: Return for the Composition Scheme",
+          "points": [
+            "For: Composition dealers",
+            "Traders and manufacturers: up to ₹1.5 Cr; Service Providers: Up to ₹50 Lakhs",
+            "Every year, you must file.",
+            "Due Date: April 30 of the next financial year"
+          ]
+        },
+        {
+          "title": "GSTR-5: Taxable Person Who Is Not a Resident",
+          "points": [
+            "For: Businesses that aren't based in India but do business there",
+            "Turnover: No limit",
+            "Due date: 20th of next month"
+          ]
+        },
+        {
+          "title": "GSTR-6: Input Service Distributor (ISD)",
+          "points": ["For: ISD-registered businesses", "Due date: 13th of next month"]
+        },
+        {
+          "title": "GSTR-7: TDS Return",
+          "points": ["Who can use this: Businesses that deduct TDS under GST", "Due date: 10th of next month"]
+        },
+        {
+          "title": "GSTR-8—TCS Return",
+          "points": ["Who it applies to: People who run e-commerce sites", "Due date: 10th of next month"]
+        },
+        {
+          "title": "GSTR-9—Annual Return",
+          "points": ["Who it applies to: Regular taxpayers", "Due date: December 31 of the next fiscal year"]
+        },
+        {
+          "title": "GSTR-9A: Annual Return for Composition Dealers",
+          "points": ["For: People who pay composition taxes", "Due date: December 31"]
+        },
+        {
+          "title": "GSTR-10: Final Return",
+          "points": ["If you cancel or give up your GST registration, this applies to you", "Due Date: 3 months after cancellation"]
+        },
+        {
+          "title": "GSTR-11 – People with UINs",
+          "points": ["Who it applies to: Embassies, UN bodies, and people who have been notified", "Goal: Get back the GST you paid", "Due date: 28th of next month"]
+        }
+      ]
+    },
+    {
+      "heading": "Late Fees and Interest",
+      "list": [
+        {
+          "title": "GSTR-1 and GSTR-3B: Late Fees",
+          "points": ["₹50 a day (₹25 CGST and ₹25 SGST)", "₹20 a day for no return", "Maximum: ₹5,000 for each return"]
+        },
+        {
+          "title": "GSTR-9 (Annual Return) Late Fees",
+          "points": ["₹200 every day (₹100 for CGST and ₹100 for SGST)", "Maximum: 0.5% of the state's total sales"]
+        },
+        {
+          "title": "Interest on Taxes Paid Late",
+          "points": ["18% per year in unpaid taxes"]
+        }
+      ]
+    },
+    {
+      "heading": "Importance of Filing GST",
+      "content": [
+        "Stay away from fines and interest.",
+        "Make sure that ITC never stops.",
+        "Follow the rules for GST.",
+        "Cut down on mistakes and departmental notices.",
+        "Our GST experts handle the entire process of filing GST returns for all types of businesses, making sure that compliance is easy, quick, and accurate."
+      ]
+    },
+    {
+      "heading": "GST Return Table",
+      "table": {
+        "headers": ["GST Return", "Type of Taxpayer", "Filing Frequency", "Due Date"],
+        "rows": [
+          ["GSTR-1", "Regular taxpayers (outward supplies)", "Monthly", "11th of next month"],
+          ["", "", "Quarterly (QRMP)", "13th of month after quarter"],
+          ["GSTR-3B", "Regular taxpayers (summary & tax payment)", "Monthly", "20th of next month"],
+          ["", "", "Quarterly (QRMP)", "22nd / 24th (state-wise)"],
+          ["GSTR-4", "Composition scheme taxpayers", "Annual", "30th April of next FY"],
+          ["GSTR-5", "Non-resident taxable persons", "Monthly", "20th of next month"],
+          ["GSTR-6", "Input Service Distributor (ISD)", "Monthly", "13th of next month"],
+          ["GSTR-7", "TDS deductors", "Monthly", "10th of next month"],
+          ["GSTR-8", "E-commerce operators (TCS)", "Monthly", "10th of next month"],
+          ["GSTR-9", "Regular taxpayers (Annual Return)", "Annual", "31st December of next FY"],
+          ["GSTR-9A", "Composition taxpayers (Annual Return)", "Annual", "31st December"],
+          ["GSTR-10", "Cancelled GST registration", "One-time", "Within 3 months of cancellation"],
+          ["GSTR-11", "UIN holders (refund claims)", "Monthly", "28th of next month"]
+        ]
+      }
+    }
+  ]
+}
