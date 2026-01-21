@@ -8,22 +8,74 @@
     {
       "label": "Home",
       "href": "/",
-      "id": "home"
+      "id": "home",
+      "subLinks": []
     },
     {
-      "label": "Services",
-      "href": "/services",
-      "id": "services"
+      "label": "Start a Business",
+      "href": "/start-a-business",
+      "type": "category",
+      "id": "start-a-business",
+      "subLinks": [
+        {
+          "label": "Private Limited (Pvt Ltd) Company Registration in India",
+          "href": "/start-a-business/private-limited-company-registration-in-india",
+          "id": "private-limited-company-registration-in-india"
+        },
+        {
+          "label": "Limited liability registration",
+          "href": "/start-a-business/limited-liability-registration",
+          "id": "limited-liability-registration"
+        },
+        {
+          "label": "Sole Proprietorship Firm Registration",
+          "href": "/start-a-business/sole-proprietorship-firm-registration",
+          "id": "sole-proprietorship-firm-registration"
+        },
+        {
+          "label": "Partnership firm registration",
+          "href": "/start-a-business/partnership-firm-registration",
+          "id": "partnership-firm-registration"
+        }
+      ]
     },
     {
-      "label": "About",
-      "href": "/about",
-      "id": "about"
+      "label": "Income Tax eFiling",
+      "href": "/income-tax-eFiling",
+      "type": "category",
+      "id": "income-tax-eFiling",
+      "subLinks": [
+        {
+          "label": "Income Tax filing",
+          "href": "/income-tax-filing",
+          "id": "income-tax-filing"
+        },
+        {
+          "label": "Business Income Tax Return",
+          "href": "/income-tax-eFiling/business-income-tax-return",
+          "id": "business-income-tax-return"
+        }
+      ]
+    },
+    {
+      "label": " MCA Filings ",
+      "href": "/mca-filings",
+      "type": "category",
+      "id": "mca-filings",
+      "subLinks": []
+    },
+    {
+      "label": "Registrations",
+      "href": "/registrations",
+      "type": "category",
+      "id": "registrations",
+      "subLinks": []
     },
     {
       "label": "Contact",
       "href": "/contact",
-      "id": "contact"
+      "id": "contact",
+      "subLinks": []
     }
   ],
   "cta": {
