@@ -11,6 +11,7 @@ import gstRegistrationIndia from "@/utils/services/gstRegistrationIndia.json"
 export default function ServiceDetail() {
   const pathname = usePathname();
   const basePath = pathname.split("/")[2];
+  console.log('basePath', basePath)
 
   // Map slugs to JSON files
   const serviceMap: { [key: string]: any } = {
@@ -19,7 +20,7 @@ export default function ServiceDetail() {
     "income-tax-return": businessIncomeTaxReturn,
     "gstr9-annual-return": gstr9AnnualReturn,
     "gstr10-return": gstr10Return,
-    "gst-registration":gstRegistrationIndia,
+    "gst-registration": gstRegistrationIndia,
   };
   //   console.log("service11", serviceMap);
 
