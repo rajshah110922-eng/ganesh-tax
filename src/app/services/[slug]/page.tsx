@@ -1,12 +1,12 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import incomeTaxData from "@/utils/incomeTaxFiling.json";
-import gstReturnFiling from "@/utils/gstReturnFiling.json";
-import businessIncomeTaxReturn from "@/utils/businessIncomeTaxReturn.json";
-import gstr9AnnualReturn from "@/utils/gstrr-9AnnualReturnFiling.json";
-import gstr10Return from "@/utils/gstr10Return.json";
-import gstRegistrationIndia from "@/utils/gstRegistrationIndia.json"
+import incomeTaxData from "@/utils/services/incomeTaxFiling.json";
+import gstReturnFiling from "@/utils/services/gstReturnFiling.json";
+import businessIncomeTaxReturn from "@/utils/services/businessIncomeTaxReturn.json";
+import gstr9AnnualReturn from "@/utils/services/gstrr-9AnnualReturnFiling.json";
+import gstr10Return from "@/utils/services/gstr10Return.json";
+import gstRegistrationIndia from "@/utils/services/gstRegistrationIndia.json"
 
 export default function ServiceDetail() {
   const pathname = usePathname();

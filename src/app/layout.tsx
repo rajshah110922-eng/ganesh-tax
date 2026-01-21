@@ -3,6 +3,7 @@ import "./globals.scss";
 import Footer from "@/components/Footer";
 import { Analytics } from '@vercel/analytics/next'
 import Header from "@/components/Header";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Ganesh Tax",
@@ -22,6 +23,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">
           {children}
+          <SpeedInsights />
         </main>
         <Footer />
         <Analytics />
