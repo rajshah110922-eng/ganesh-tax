@@ -17,7 +17,7 @@ export default function ServiceDetail() {
   const serviceMap: { [key: string]: any } = {
     "income-tax-filing": incomeTaxData,
     "gst-return-filing": gstReturnFiling,
-    "income-tax-return": businessIncomeTaxReturn,
+    "business-income-tax-return": businessIncomeTaxReturn,
     "gstr9-annual-return": gstr9AnnualReturn,
     "gstr10-return": gstr10Return,
     "gst-registration": gstRegistrationIndia,
