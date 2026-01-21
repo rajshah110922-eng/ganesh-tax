@@ -20,7 +20,7 @@ export default function OurServices({ servicesData }: any) {
                     {topServices.map((service: any) => (
                         <Link
                             key={service.id}
-                            href={service.href}
+                            href={'#'}
                             className="group bg-white border border-gray-200 lg:rounded-[24px] rounded-[18px] p-8 hover:border-green-300 hover:shadow-lg transition-all duration-300"
                         >
                             <div className="flex items-start justify-between mb-4">
@@ -34,7 +34,7 @@ export default function OurServices({ servicesData }: any) {
                     ))}
                 </div>
 
-                <div className="mt-12 text-center">
+                {/* <div className="mt-12 text-center">
                     <Link
                         href="/services"
                         className="inline-flex items-center gap-2 px-4 py-2 border-2 border-green-600 text-green-600 font-semibold rounded-full hover:bg-green-50 transition-colors duration-200"
@@ -42,7 +42,7 @@ export default function OurServices({ servicesData }: any) {
                         View All Services
                         <ChevronRight size={20} />
                     </Link>
-                </div>
+                </div> */}
             </div>
         </section>
     )

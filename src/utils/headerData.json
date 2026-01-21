@@ -40,6 +40,55 @@
       ]
     },
     {
+      "label": "Registrations",
+      "href": "/registrations",
+      "type": "category",
+      "id": "registrations",
+      "subLinks": [
+        {
+          "label": "MSME registration",
+          "href": "/registrations/msme-registration",
+          "id": "msme-registration"
+        },
+        {
+          "label": "Drug licences",
+          "href": "/registrations/drug-licences",
+          "id": "drug-licences"
+        },
+        {
+          "label": "Digital Signature Certificate (DSC)",
+          "href": "/registrations/digital-signature-certificate",
+          "id": "digital-signature-certificate"
+        },
+        {
+          "label": "12A and 80G Registration",
+          "href": "/registrations/12A-and-80G-registration",
+          "id": "12A-and-80G-registration"
+        },
+        {
+          "label": "IEC Certification",
+          "href": "/registrations/iec-certification",
+          "id": "iec-certification"
+        },
+        {
+          "label": "PF Registration",
+          "href": "/registrations/pf-registration",
+          "id": "pf-registration"
+        },
+        {
+          "label": "ESI Registration",
+          "href": "/registrations/esi-registration",
+          "id": "esi-registration"
+        },
+        {
+          "label": "Professional Tax Registration",
+          "href": "/registrations/professional-tax-registration",
+          "id": "professional-tax-registration"
+        }
+      ]
+    },
+   
+    {
       "label": "Income Tax eFiling",
       "href": "/income-tax-eFiling",
       "type": "category",
@@ -47,7 +96,7 @@
       "subLinks": [
         {
           "label": "Income Tax filing",
-          "href": "/income-tax-filing",
+          "href": "/income-tax-eFiling/income-tax-filing",
           "id": "income-tax-filing"
         },
         {
@@ -57,20 +106,8 @@
         }
       ]
     },
-    {
-      "label": " MCA Filings ",
-      "href": "/mca-filings",
-      "type": "category",
-      "id": "mca-filings",
-      "subLinks": []
-    },
-    {
-      "label": "Registrations",
-      "href": "/registrations",
-      "type": "category",
-      "id": "registrations",
-      "subLinks": []
-    },
+ 
+
     {
       "label": "Contact",
       "href": "/contact",

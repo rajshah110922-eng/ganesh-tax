@@ -7,6 +7,19 @@ import businessIncomeTaxReturn from "@/utils/services/businessIncomeTaxReturn.js
 import gstr9AnnualReturn from "@/utils/services/gstrr-9AnnualReturnFiling.json";
 import gstr10Return from "@/utils/services/gstr10Return.json";
 import gstRegistrationIndia from "@/utils/services/gstRegistrationIndia.json"
+import llpRegistration from "@/utils/services/llpRegistration.json"
+import partnershipFirmRegistration from "@/utils/services/partnershipFirmRegistration.json"
+import privateLimitedCompany from "@/utils/services/privateLimitedCompany.json"
+import proprietorshipFirm from "@/utils/services/proprietorshipFirm.json"
+import msmeRegistration from "@/utils/services/msmeRegistration.json"
+import drugLicense from "@/utils/services/drugLicense.json"
+import dscRegistration from "@/utils/services/dscRegistration.json"
+import twelvea80gRegistration from "@/utils/services/12a80gRegistration.json"
+import iecCertification from "@/utils/services/iecCertification.json"
+import pfRegistration from "@/utils/services/pfRegistration.json"
+import iecRegistrations from "@/utils/services/iecRegistrations.json"
+import professionalTax from "@/utils/services/professionalTax.json"
+
 
 export default function ServiceDetail() {
 
@@ -21,6 +34,18 @@ export default function ServiceDetail() {
     "gstr9-annual-return": gstr9AnnualReturn,
     "gstr10-return": gstr10Return,
     "gst-registration": gstRegistrationIndia,
+    "limited-liability-registration":llpRegistration,
+    "partnership-firm-registration":partnershipFirmRegistration,
+    "private-limited-company-registration-in-india":privateLimitedCompany,
+    "sole-proprietorship-firm-registration":proprietorshipFirm,
+    "msme-registration":msmeRegistration,
+    "drug-licences":drugLicense,
+    "digital-signature-certificate":dscRegistration,
+    "12A-and-80G-registration":twelvea80gRegistration,
+    "iec-certification":iecCertification,
+    "pf-registration":pfRegistration,
+    'esi-registration':iecRegistrations,
+    "professional-tax-registration":professionalTax,
   };
 
   const data = serviceMap[basePath];

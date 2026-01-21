@@ -1,0 +1,170 @@
+{
+  "slug": "esi-registration",
+  "title": "ESI Registration",
+  "sections": [
+    {
+      "heading": "ESI Registration",
+      "content": [
+        "Businesses in India must register for Employees' State Insurance (ESI) under the Employees' State Insurance Act, 1948. This program helps workers and their families by paying for medical care, sick leave, maternity leave, disability coverage, and money in case of death on the job.",
+        "Companies that meet certain requirements must sign up with the Employees' State Insurance Corporation (ESIC) and make monthly payments to the fund."
+      ]
+    },
+    {
+      "heading": "Who Needs to Sign Up for ESI?",
+      "list": [
+        {
+          "title": "",
+          "points": [
+            "Companies that have 10 or more employees (20 in some states)",
+            "Employees who make ₹21,000 or less a month",
+            "All kinds of businesses, such as companies, LLPs, partnerships, and sole proprietorships",
+            "Businesses, shops, and factories",
+            "Once your business is covered by ESI, it stays covered even if you hire fewer people than the minimum"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "What ESI Can Do For You",
+      "list": [
+        {
+          "title": "For Workers",
+          "points": [
+            "Free medical care for employees and their families",
+            "Cash benefits while sick",
+            "Maternity leave for women",
+            "Disability benefits (temporary or permanent)",
+            "Help with funeral costs",
+            "Financial help for dependents if an employee dies"
+          ]
+        },
+        {
+          "title": "For Employers",
+          "points": [
+            "Follows the law",
+            "Makes employees happier and healthier",
+            "Lowers the cost of medical care",
+            "Makes the workforce more stable"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Documents Needed to Register for ESI",
+      "list": [
+        {
+          "title": "Documents for Business",
+          "points": [
+            "PAN Card for the business",
+            "Registration certificate",
+            "Proof of business address",
+            "Bank details (cancelled cheque or statement)",
+            "Digital Signature Certificate",
+            "Shop & Establishment or Factory licence"
+          ]
+        },
+        {
+          "title": "Documents for the Owner or Director",
+          "points": [
+            "PAN Card",
+            "Aadhaar Card",
+            "A recent photo",
+            "An email address and phone number"
+          ]
+        },
+        {
+          "title": "Information about Employees",
+          "points": [
+            "Aadhaar Card",
+            "PAN Card",
+            "Family member information",
+            "Bank account information"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "How to Sign Up for ESI",
+      "list": [
+        {
+          "title": "",
+          "points": [
+            "Use your PAN to make an employer account on the ESIC portal",
+            "Give information about your business, who owns it, and who works there",
+            "The ESIC looks over your application and gives you a 17-digit ESI Registration Number",
+            "It usually takes 7 to 15 business days to finish"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "ESI Contribution Rates",
+      "table": {
+        "headers": ["Contributor", "Contribution Rate"],
+        "rows": [
+          ["Employer", "3.25% of the employee's wages"],
+          ["Employee", "0.75% of their wages"]
+        ]
+      }
+    },
+    {
+      "heading": "Ongoing Requirements for Compliance",
+      "list": [
+        {
+          "title": "",
+          "points": [
+            "Pay your ESI contributions every month by the 15th of the next month",
+            "File your ESI returns twice a year",
+            "Keep accurate records of attendance and wages",
+            "Update employee information as needed"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Penalties for Not Following the Rules",
+      "list": [
+        {
+          "title": "",
+          "points": [
+            "Interest charges for late payments",
+            "Fines",
+            "Lawsuits",
+            "Loss of benefits for your workers"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Common Questions",
+      "list": [
+        {
+          "title": "",
+          "points": [
+            "Do new businesses need to register with ESI? Yes, as long as you have the right number of employees and they are paid less than the limit.",
+            "Is it possible for me to sign up for ESI on my own? Yes, but only if you meet the coverage requirements in some cases.",
+            "Do contract workers get ESI? Yes, both temporary and contract workers are covered.",
+            "What happens if an employee makes more than ₹21,000? Employees who make more than ₹21,000 are usually not covered, unless they signed up before their pay went up.",
+            "Can workers choose not to join ESI? No, once ESI coverage is required, it is.",
+            "What happens if the number of employees I have goes down? Even if your workforce drops below the threshold, ESI coverage stays in place."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Why Hire Professional ESI Services?",
+      "list": [
+        {
+          "title": "",
+          "points": [
+            "Full help with signing up",
+            "Help with making sure the paperwork is correct",
+            "Managing compliance on time",
+            "Helping with filing returns",
+            "Providing dedicated customer support"
+          ]
+        }
+      ]
+    }
+  ]
+}
