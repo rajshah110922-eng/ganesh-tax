@@ -19,6 +19,20 @@ import iecCertification from "@/utils/services/iecCertification.json"
 import pfRegistration from "@/utils/services/pfRegistration.json"
 import iecRegistrations from "@/utils/services/iecRegistrations.json"
 import professionalTax from "@/utils/services/professionalTax.json"
+import GSTLUTForm from "@/utils/services/gstLutForm.json"
+import GSTRegistrationAmendment from "@/utils/services/gstRegistrationAmendment.json"
+import Gstr10 from "@/utils/services/gstr10Return.json"
+import Gstr9Annual from "@/utils/services/gstrr-9AnnualReturnFiling.json"
+import AnnualComplianceforPLC from "@/utils/services/annualComplianceforplc.json"
+import AnnualComplianceforLLP from "@/utils/services/annualComplianceforllp.json"
+import AnnualComplianceforOPC from "@/utils/services/annualComplianceforopc.json"
+import Dir3KYC from "@/utils/services/dir3kyc.json"
+import ADT1Filing from "@/utils/services/adt1Filings.json"
+import INC20Filing from "@/utils/services/inc20Filings.json"
+import AOC4Filing from "@/utils/services/aoc4Filings.json"
+import MGT7Filing from "@/utils/services/mgt7Filings.json"
+import Form8 from "@/utils/services/form8Filing.json"
+import Form11 from "@/utils/services/form11Filing.json"
 
 
 export default function ServiceDetail() {
@@ -46,6 +60,20 @@ export default function ServiceDetail() {
     "pf-registration":pfRegistration,
     'esi-registration':iecRegistrations,
     "professional-tax-registration":professionalTax,
+    "gst-lut-form":GSTLUTForm,
+    "gst-registration-amendment":GSTRegistrationAmendment,
+    "gstr-10":Gstr10,
+    "gstr9-annual-filing":Gstr9Annual,
+    "annnual-compliances-for-plc":AnnualComplianceforPLC,
+    "annnual-compliances-for-llp":AnnualComplianceforLLP,
+    "annnual-compliances-for-opc":AnnualComplianceforOPC,
+    "dir-3-kyc":Dir3KYC,
+    "adt-1-filings":ADT1Filing,
+    "inc-20-filings":INC20Filing,
+    "aoc-4":AOC4Filing,
+    "mgt-7":MGT7Filing,
+    "form-8":Form8,
+    "form-11":Form11,
   };
 
   const data = serviceMap[basePath];

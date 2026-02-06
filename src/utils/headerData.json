@@ -87,7 +87,45 @@
         }
       ]
     },
-   
+    {
+      "label": "GST",
+      "href": "/gst",
+      "type": "category",
+      "id": "gst",
+      "subLinks": [
+        {
+          "label": "GST registration ",
+          "href": "/gst/gst-registration",
+          "id": "gst-registration"
+        },
+        {
+          "label": "GST Return Filing",
+          "href": "/gst/gst-return-filing",
+          "id": "gst-return-filing"
+        },
+        {
+          "label": "GST LUT FORM",
+          "href": "/gst/gst-lut-form",
+          "id": "gst-lut-form"
+        },
+        {
+          "label": "GST Registration Amendment",
+          "href": "/gst/gst-registration-amendment",
+          "id": "gst-registration-amendment"
+        },
+        {
+          "label": "GSTR-10",
+          "href": "/gst/gstr-10",
+          "id": "gstr-10"
+        },
+        {
+          "label": "GSTR-9Annual Return Filing",
+          "href": "/gst/gstr9-annual-filing",
+          "id": "gstr9-annual-filing"
+        }
+      ]
+    },
+
     {
       "label": "Income Tax eFiling",
       "href": "/income-tax-eFiling",
@@ -106,7 +144,64 @@
         }
       ]
     },
- 
+
+    {
+      "label": " MCA Filings ",
+      "href": "/mca-filings",
+      "type": "category",
+      "id": "mca-filings",
+      "subLinks": [
+        {
+          "label": "Annual Compliances for Private Limited Company",
+          "href": "/mca-filings/annnual-compliances-for-plc",
+          "id": "annnual-compliances-for-plc"
+        },
+        {
+          "label": "Annual Compliance for LLP",
+          "href": "/mca-filings/annnual-compliances-for-llp",
+          "id": "annnual-compliances-for-llp"
+        },
+        {
+          "label": "Annual compliance for OPC",
+          "href": "/mca-filings/annnual-compliances-for-opc",
+          "id": "annnual-compliances-for-opc"
+        },
+        {
+          "label": "DIR 3 KYC",
+          "href": "/mca-filings/dir-3-kyc",
+          "id": "dir-3-kyc"
+        },
+        {
+          "label": "ADT 1 filings",
+          "href": "/mca-filings/adt-1-filings",
+          "id": "adt-1-filings"
+        },
+        {
+          "label": "INC 20 filings",
+          "href": "/mca-filings/inc-20-filings",
+          "id": "inc-20-filings"
+        },
+        {
+          "label": "AOC 4",
+          "href": "/mca-filings/aoc-4",
+          "id": "aoc-4"
+        },
+        {
+          "label": "MGT 7",
+          "href": "/mca-filings/mgt-7",
+          "id": "mgt-7"
+        },
+        {
+          "label": "FORM 8",
+          "href": "/mca-filings/form-8",
+          "id": "form-8"
+        },{
+          "label": "Form 11",
+          "href": "/mca-filings/form-11",
+          "id": "form-11"
+        }        
+      ]
+    },
 
     {
       "label": "Contact",

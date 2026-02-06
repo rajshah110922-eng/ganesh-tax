@@ -1,0 +1,89 @@
+{
+  "slug": "gst-lut-form",
+  "title": "GST LUT Form",
+  "sections": [
+    {
+      "heading": "GST Overview of LUTs (Letters of Undertaking)",
+      "content": [
+        "Eligible exporters can export goods or services without paying IGST by using a Letter of Undertaking (LUT) under GST.",
+        "Exporters can avoid blocking working capital and guarantee more seamless international transactions by filing LUT in Form GST RFD-11."
+      ]
+    },
+    {
+      "heading": "Who May Submit a GST LUT?",
+      "content": [
+        "GST LUT may be submitted by:"
+      ],
+      "list": [
+        {
+          "points": [
+            "Exporters of products or services",
+            "Suppliers to SEZ developers or units",
+            "GST-registered taxpayers who have not been prosecuted for more than ₹2.5 crore in tax evasion"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Advantages of GST LUT Filing",
+      "list": [
+        {
+          "points": [
+            "Export without having to pay IGST",
+            "Enhanced cash flow",
+            "Quicker export procedure",
+            "IGST refunds do not need to be claimed later."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Documents Needed for GST LUT",
+      "list": [
+        {
+          "points": [
+            "Certificate of GST Registration",
+            "The applicant's PAN card",
+            "IEC stands for import-export code.",
+            "Details of the authorised signatory"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "GST LUT's validity",
+      "content": [
+        "LUT is good for a single fiscal year. Must be renewed annually prior to exporting"
+      ]
+    },
+    {
+      "heading": "How to File a GST LUT",
+      "list": [
+        {
+          "points": [
+            "Enter the GST Portal login.",
+            "Go to Services → User Services → Furnish LUT (RFD-11).",
+            "Complete the necessary information and declarations.",
+            "Use DSC or EVC to submit",
+            "Instantaneous generation of acknowledgement"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Why File an Online GST LUT?",
+      "content": [
+        "Online GST LUT filing guarantees:"
+      ],
+      "list": [
+        {
+          "points": [
+            "Adherence to GST laws",
+            "Easy exports",
+            "prompt documentation and approval"
+          ]
+        }
+      ]
+    }
+  ]
+}

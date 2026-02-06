@@ -1,0 +1,161 @@
+{
+  "slug": "annual-compliance-private-limited-company",
+  "title": "Annual Compliance For Private Limited Company",
+  "sections": [
+    {
+      "heading": "Complete Compliance Guide for Private Limited Companies",
+      "content": [
+        "Private Limited Companies in India must comply with annual and event-based requirements under the Companies Act, 2013 and Income Tax Act. Missing deadlines can result in penalties and director disqualification."
+      ]
+    },
+    {
+      "heading": "What is Compliance?",
+      "content": [
+        "Compliance for a Private Limited Company includes:"
+      ],
+      "list": [
+        {
+          "points": [
+            "ROC (Registrar of Companies) filings",
+            "Income tax returns",
+            "Statutory registers and board meetings",
+            "Financial statements and annual returns"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Note",
+      "content": [
+        "Compliance is mandatory even with zero business activity."
+      ]
+    },
+    {
+      "heading": "Annual Compliance Requirements",
+      "content": []
+    },
+    {
+      "heading": "1. ROC (MCA) Filings",
+      "table": {
+        "headers": [
+          "Form",
+          "Purpose",
+          "Due Date"
+        ],
+        "rows": [
+          ["ADT-1", "Auditor Appointment", "Within 15 days of AGM"],
+          ["AOC-4", "Financial Statements", "Within 30 days of AGM"],
+          ["MGT-7/7A", "Annual Return", "Within 60 days of AGM"],
+          ["DIR-3 KYC", "Director KYC", "September 30"]
+        ]
+      }
+    },
+    {
+      "heading": "2. Income Tax Compliance",
+      "table": {
+        "headers": [
+          "Requirement",
+          "Due Date"
+        ],
+        "rows": [
+          ["Advance Tax (if applicable)", "15 Jun, 15 Sep, 15 Dec, 15 Mar"],
+          ["ITR-6 Filing", "October 31"],
+          ["Tax Audit Report (if needed)", "September 30"]
+        ]
+      }
+    },
+    {
+      "heading": "3. Other Mandatory Requirements",
+      "list": [
+        {
+          "points": [
+            "Minimum 2 board meetings per year",
+            "Maintenance of statutory registers",
+            "Auditor appointment and reappointment",
+            "AGM within 6 months of financial year-end"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Event-Based Compliance",
+      "list": [
+        {
+          "points": [
+            "Director appointment or resignation",
+            "Share allotment or transfer",
+            "Change in company name, registered office, or objects",
+            "Increase in authorized capital"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Penalties for Non-Compliance",
+      "list": [
+        {
+          "points": [
+            "₹100 per day late fee (no upper limit) for ROC filings",
+            "Director DIN deactivation",
+            "Company marked as non-compliant",
+            "Risk of company strike-off"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Frequently Asked Questions (FAQs)",
+      "list": [
+        {
+          "title": "Is compliance required with zero business activity?",
+          "points": [
+            "Yes. All companies, including those with no turnover, must file annual compliance."
+          ]
+        },
+        {
+          "title": "What are the consequences of missing ROC filings?",
+          "points": [
+            "Daily late fees, potential DIN deactivation for directors, and company non-compliance status."
+          ]
+        },
+        {
+          "title": "How many directors are required?",
+          "points": [
+            "Minimum 2 directors are mandatory at all times."
+          ]
+        },
+        {
+          "title": "Is GST filing included?",
+          "points": [
+            "No. GST compliance is separate and required only if registered."
+          ]
+        },
+        {
+          "title": "Can filings be done online?",
+          "points": [
+            "Yes. All filings are submitted through MCA and Income Tax portals."
+          ]
+        },
+        {
+          "title": "Do you offer annual compliance packages?",
+          "points": [
+            "Yes. We provide comprehensive, affordable annual compliance packages."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Why Choose Our Services?",
+      "list": [
+        {
+          "points": [
+            "Dedicated compliance manager",
+            "Timely reminders and filings",
+            "Affordable annual packages",
+            "100% MCA and IT compliant process"
+          ]
+        }
+      ]
+    }
+  ]
+}
