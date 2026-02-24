@@ -100,16 +100,16 @@ export default function ServiceDetail() {
   return (
     <section className="py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto px-4 py-10">
+        <div className="max-w-4xl mx-auto md:px-4 py-5">
           {/*... <div className="text-center mb-12">
             {/* Main Title 
             <h2 className="text-3xl font-bold mb-6">{data.title}</h2>
           </div> ...*/}
 
-          <div className="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-100 rounded-2xl p-8 mb-16 text-center">
-            <h2 className="relative inline-block text-3xl md:text-4xl font-extrabold text-gray-900 mb-8">
+          <div className="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-100 rounded-2xl md:p-8 p-4 md:mb-16 mb-6 text-center">
+            <h2 className="relative inline-block text-2xl md:text-4xl font-extrabold text-gray-900 md:mb-8 mb-4">
               {data.title}
-              <span className="absolute left-1/2 -bottom-3 h-1 w-2/3 -translate-x-1/2 bg-gradient-to-r from-green-500 to-emerald-400 rounded-full" />
+              <span className="absolute left-1/2 left-0 -bottom-3 h-1 w-2/3 -translate-x-1/2 bg-gradient-to-r from-green-500 to-emerald-400 rounded-full" />
             </h2>
 
             <div className="flex flex-wrap justify-center gap-4 mt-4">
@@ -126,22 +126,22 @@ export default function ServiceDetail() {
           </div>
 
           {/* Sections */}
-          <div className="space-y-12">
+          <div className="space-y-4">
             {data.sections.map((section: any, index: number) => (
               <div
                 key={index}
-                className="bg-white border border-gray-200 rounded-xl p-6 md:p-8 shadow-sm hover:shadow-md transition"
+                className="bg-white border border-gray-200 rounded-xl p-4 md:p-6 shadow-sm hover:shadow-md transition"
               >
                 <div className="space-y-10">
                   {/* Section Heading */}
-                  <h2 className="text-xl font-semibold mb-4 flex items-center gap-3">
-                    <span className="w-2 h-2 rounded-full bg-green-500"></span>
+                  <h2 className="text-xl font-[800] mb-4 flex items-center gap-3">
+                    {/* <span className="w-2 h-2 rounded-full bg-green-500"></span> */}
                     {section.heading}
                   </h2>
 
                   {/* Paragraphs */}
                   {section.content?.map((text: string, i: number) => (
-                    <p key={i} className="text-gray-700 mb-2">
+                    <p key={i} className="text-gray-700 mb-2 md:text-lg text-sm">
                       {text}
                     </p>
                   ))}
@@ -150,11 +150,11 @@ export default function ServiceDetail() {
                   {section.list?.map((item: any, i: number) => (
                     <div key={i} className="mb-3">
                       {item.title && (
-                        <h3 className="font-medium">{item.title}</h3>
+                        <h3 className="font-bold md:text-lg text-sm">{item.title}</h3>
                       )}
                       <ul className="list-disc pl-6">
                         {item.points.map((point: string, j: number) => (
-                          <li key={j}>{point}</li>
+                          <li key={j} className="md:text-lg text-sm">{point}</li>
                         ))}
                       </ul>
                     </div>
@@ -162,33 +162,35 @@ export default function ServiceDetail() {
 
                   {/* Tables */}
                   {section.table && (
-                    <table className="w-full border border-gray-300 mt-4">
-                      <thead className="bg-gray-100">
-                        <tr>
-                          {section.table.headers.map(
-                            (header: string, i: number) => (
-                              <th
-                                key={i}
-                                className="border px-3 py-2 text-left"
-                              >
-                                {header}
-                              </th>
-                            ),
-                          )}
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {section.table.rows.map((row: string[], i: number) => (
-                          <tr key={i} className="even:bg-gray-50">
-                            {row.map((cell: string, j: number) => (
-                              <td key={j} className="border px-3 py-2">
-                                {cell}
-                              </td>
-                            ))}
+                    <div className="mt-4 overflow-x-auto">
+                      <table className="min-w-[700px] w-full border border-gray-300 table-auto">
+                        <thead className="bg-gray-100">
+                          <tr>
+                            {section.table.headers.map(
+                              (header: string, i: number) => (
+                                <th
+                                  key={i}
+                                  className="border px-3 py-2 text-left whitespace-nowrap text-sm"
+                                >
+                                  {header}
+                                </th>
+                              ),
+                            )}
                           </tr>
-                        ))}
-                      </tbody>
-                    </table>
+                        </thead>
+                        <tbody>
+                          {section.table.rows.map((row: string[], i: number) => (
+                            <tr key={i} className="even:bg-gray-50">
+                              {row.map((cell: string, j: number) => (
+                                <td key={j} className="border px-3 py-2 whitespace-nowrap text-sm">
+                                  {cell}
+                                </td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
                   )}
                 </div>
               </div>
