@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CorpEase — Business Compliance Made Simple</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Fraunces:ital,wght@0,300;0,500;0,700;1,300;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#1a1208;
+  --paper:#faf8f3;
+  --cream:#f2ede0;
+  --warm:#e8dfc8;
+  --sage:#4a7c59;
+  --sage-light:#7aad89;
+  --sage-pale:#d4ead8;
+  --rust:#c94f2a;
+  --rust-pale:#f5e0d8;
+  --gold:#d4a017;
+  --gold-pale:#f7edd0;
+  --navy:#1e3a5f;
+  --navy-pale:#d6e4f5;
+  --muted:#6b5d4a;
+  --border:#c8bda8;
+  --font-display:'Fraunces',serif;
+  --font-sketch:'Caveat',cursive;
+  --font-body:'DM Sans',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--font-body);overflow-x:hidden}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--paper);border-bottom:1.5px solid var(--border);padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-mark{width:36px;height:36px;position:relative}
+.logo-mark svg{width:36px;height:36px}
+.logo-name{font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--ink);letter-spacing:-0.5px}
+.logo-name span{color:var(--sage)}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-links a{font-family:var(--font-body);font-size:14px;font-weight:400;color:var(--muted);text-decoration:none;padding:7px 14px;border-radius:6px;transition:all .2s;cursor:pointer}
+.nav-links a:hover,.nav-links a.active{color:var(--ink);background:var(--cream)}
+.nav-cta{background:var(--sage);color:#fff;font-family:var(--font-body);font-size:14px;font-weight:500;padding:9px 22px;border-radius:24px;border:none;cursor:pointer;transition:all .2s}
+.nav-cta:hover{background:#3a6547;transform:translateY(-1px)}
+
+/* PAGES */
+.page{display:none;min-height:100vh;padding-top:68px}
+.page.active{display:block}
+
+/* ======================== HOME ======================== */
+.hero{position:relative;padding:80px 60px 60px;min-height:92vh;display:flex;align-items:center;overflow:hidden;background:var(--paper)}
+.hero-scribbles{position:absolute;inset:0;pointer-events:none;z-index:0}
+.hero-content{position:relative;z-index:2;max-width:600px}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--gold-pale);border:1.5px solid var(--gold);border-radius:20px;padding:5px 14px;margin-bottom:28px}
+.hero-eyebrow span{font-family:var(--font-sketch);font-size:15px;color:var(--gold);font-weight:600}
+.hero h1{font-family:var(--font-display);font-size:clamp(44px,5vw,68px);font-weight:700;line-height:1.08;color:var(--ink);margin-bottom:22px;letter-spacing:-1.5px}
+.hero h1 em{font-style:italic;color:var(--sage)}
+.hero h1 .underline-sketch{position:relative;display:inline-block}
+.hero h1 .underline-sketch::after{content:'';position:absolute;bottom:-4px;left:0;width:100%;height:10px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12'%3E%3Cpath d='M2 8 Q50 2 100 8 Q150 14 198 6' stroke='%23c94f2a' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") bottom/100% no-repeat}
+.hero-desc{font-size:17px;line-height:1.7;color:var(--muted);margin-bottom:38px;font-weight:300;max-width:480px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.btn-primary{background:var(--sage);color:#fff;padding:14px 32px;border-radius:30px;border:none;font-family:var(--font-body);font-size:16px;font-weight:500;cursor:pointer;transition:all .25s;position:relative;overflow:hidden}
+.btn-primary:hover{background:#3a6547;transform:translateY(-2px)}
+.btn-secondary{background:transparent;color:var(--ink);padding:14px 28px;border-radius:30px;border:1.5px solid var(--border);font-family:var(--font-body);font-size:16px;cursor:pointer;transition:all .25s;font-weight:400}
+.btn-secondary:hover{border-color:var(--sage);color:var(--sage)}
+.hero-sketch-note{font-family:var(--font-sketch);font-size:17px;color:var(--rust);transform:rotate(-2deg);display:inline-block;margin-left:8px;position:relative;top:4px}
+.hero-visual{position:absolute;right:60px;top:50%;transform:translateY(-50%);z-index:1;width:460px;height:460px}
+.stats-row{display:flex;gap:0;border-top:1.5px solid var(--border);padding-top:40px;margin-top:20px}
+.stat-item{flex:1;padding-right:32px;border-right:1px dashed var(--border)}
+.stat-item:last-child{border-right:none;padding-right:0;padding-left:32px}
+.stat-item:not(:first-child){padding-left:32px}
+.stat-num{font-family:var(--font-display);font-size:38px;font-weight:700;color:var(--ink);display:block;letter-spacing:-1px}
+.stat-label{font-size:13px;color:var(--muted);font-weight:300;display:block;margin-top:2px}
+.stat-sketch{font-family:var(--font-sketch);font-size:18px;color:var(--sage);font-weight:600}
+
+/* Services strip */
+.services-strip{background:var(--cream);border-top:1.5px solid var(--border);border-bottom:1.5px solid var(--border);padding:18px 60px;display:flex;gap:0;overflow:hidden}
+.service-pill{display:inline-flex;align-items:center;gap:8px;padding:0 28px;border-right:1px dashed var(--border);white-space:nowrap;cursor:pointer;transition:all .2s}
+.service-pill:last-child{border-right:none}
+.service-pill:hover .sp-label{color:var(--sage)}
+.sp-dot{width:8px;height:8px;border-radius:50%;background:var(--sage);flex-shrink:0}
+.sp-label{font-size:14px;color:var(--muted);font-weight:400;transition:color .2s}
+
+/* Why section */
+.why-section{padding:100px 60px;background:var(--paper)}
+.section-eyebrow{font-family:var(--font-sketch);font-size:18px;color:var(--rust);font-weight:600;margin-bottom:14px;display:block;transform:rotate(-1deg)}
+.section-title{font-family:var(--font-display);font-size:clamp(36px,4vw,52px);font-weight:700;color:var(--ink);letter-spacing:-1px;line-height:1.1;margin-bottom:16px}
+.section-title em{font-style:italic;color:var(--sage)}
+.section-sub{font-size:16px;color:var(--muted);max-width:480px;line-height:1.7;font-weight:300;margin-bottom:60px}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.why-card{background:var(--cream);border:1.5px solid var(--border);border-radius:16px;padding:32px;position:relative;overflow:hidden;transition:all .25s;cursor:default}
+.why-card:hover{transform:translateY(-4px);border-color:var(--sage-light);background:#fff}
+.why-card-icon{width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-size:24px;position:relative}
+.why-card-icon.sage{background:var(--sage-pale)}
+.why-card-icon.rust{background:var(--rust-pale)}
+.why-card-icon.gold{background:var(--gold-pale)}
+.why-card-icon.navy{background:var(--navy-pale)}
+.why-card h3{font-family:var(--font-display);font-size:20px;font-weight:500;color:var(--ink);margin-bottom:10px;letter-spacing:-0.3px}
+.why-card p{font-size:14px;color:var(--muted);line-height:1.7;font-weight:300}
+.why-card-sketch{position:absolute;top:16px;right:16px;font-family:var(--font-sketch);font-size:13px;color:var(--border);transform:rotate(8deg)}
+
+/* Process */
+.process-section{background:var(--cream);border-top:1.5px solid var(--border);padding:100px 60px}
+.process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:60px;position:relative}
+.process-steps::before{content:'';position:absolute;top:36px;left:10%;right:10%;height:1px;border-top:2px dashed var(--border);z-index:0}
+.step{text-align:center;padding:0 20px;position:relative;z-index:1}
+.step-num{width:72px;height:72px;border-radius:50%;background:var(--paper);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-family:var(--font-sketch);font-size:28px;font-weight:700;color:var(--sage);position:relative;transition:all .25s}
+.step:hover .step-num{background:var(--sage);color:#fff;border-color:var(--sage)}
+.step h4{font-family:var(--font-display);font-size:17px;font-weight:500;color:var(--ink);margin-bottom:8px}
+.step p{font-size:13px;color:var(--muted);line-height:1.6;font-weight:300}
+
+/* Services preview */
+.services-preview{padding:100px 60px;background:var(--paper)}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:60px}
+.srv-card{border:1.5px solid var(--border);border-radius:16px;padding:28px;cursor:pointer;transition:all .25s;background:var(--paper);position:relative;overflow:hidden}
+.srv-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:3px;border-radius:16px 16px 0 0;opacity:0;transition:opacity .25s}
+.srv-card.sage-accent::before{background:var(--sage);opacity:1}
+.srv-card:hover{transform:translateY(-3px);background:var(--cream);box-shadow:0 8px 32px rgba(26,18,8,.08)}
+.srv-card-tag{display:inline-block;font-family:var(--font-sketch);font-size:13px;padding:3px 10px;border-radius:12px;margin-bottom:14px;font-weight:600}
+.srv-card-tag.sage{background:var(--sage-pale);color:var(--sage)}
+.srv-card-tag.rust{background:var(--rust-pale);color:var(--rust)}
+.srv-card-tag.gold{background:var(--gold-pale);color:var(--gold)}
+.srv-card-tag.navy{background:var(--navy-pale);color:var(--navy)}
+.srv-card h3{font-family:var(--font-display);font-size:20px;font-weight:500;color:var(--ink);margin-bottom:10px;letter-spacing:-0.3px}
+.srv-card p{font-size:13px;color:var(--muted);line-height:1.7;font-weight:300;margin-bottom:18px}
+.srv-card-items{display:flex;flex-direction:column;gap:6px}
+.srv-item{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:8px}
+.srv-item::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--sage);flex-shrink:0}
+.srv-arrow{position:absolute;bottom:24px;right:24px;font-family:var(--font-sketch);font-size:20px;color:var(--border);transition:all .25s}
+.srv-card:hover .srv-arrow{color:var(--sage);transform:translate(2px,-2px)}
+
+/* Testimonials */
+.testi-section{background:var(--cream);border-top:1.5px solid var(--border);padding:100px 60px}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:60px}
+.testi-card{background:var(--paper);border:1.5px solid var(--border);border-radius:16px;padding:28px;position:relative}
+.testi-quote{font-family:var(--font-display);font-size:80px;line-height:1;color:var(--sage-pale);position:absolute;top:16px;right:20px;font-weight:700}
+.testi-text{font-size:15px;color:var(--ink);line-height:1.7;font-weight:300;margin-bottom:20px;font-style:italic}
+.testi-author{display:flex;align-items:center;gap:12px}
+.testi-avatar{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-sketch);font-size:16px;font-weight:700;flex-shrink:0}
+.testi-name{font-size:14px;font-weight:500;color:var(--ink)}
+.testi-role{font-size:12px;color:var(--muted)}
+
+/* CTA Band */
+.cta-band{background:var(--sage);padding:80px 60px;position:relative;overflow:hidden;text-align:center}
+.cta-band h2{font-family:var(--font-display);font-size:clamp(32px,4vw,52px);font-weight:700;color:#fff;letter-spacing:-1px;margin-bottom:16px}
+.cta-band h2 em{font-style:italic;color:var(--gold-pale)}
+.cta-band p{color:rgba(255,255,255,.75);font-size:17px;font-weight:300;margin-bottom:36px;max-width:480px;margin-left:auto;margin-right:auto}
+.btn-white{background:#fff;color:var(--sage);padding:14px 36px;border-radius:30px;border:none;font-family:var(--font-body);font-size:16px;font-weight:500;cursor:pointer;transition:all .25s}
+.btn-white:hover{background:var(--paper);transform:translateY(-2px)}
+.cta-sketch{font-family:var(--font-sketch);font-size:60px;color:rgba(255,255,255,.1);position:absolute;right:60px;top:30px;transform:rotate(-10deg)}
+
+/* ======================== SERVICES ======================== */
+.page-hero{padding:80px 60px 60px;background:var(--cream);border-bottom:1.5px solid var(--border)}
+.page-hero-eyebrow{font-family:var(--font-sketch);font-size:18px;color:var(--rust);margin-bottom:12px;display:block}
+.page-hero h1{font-family:var(--font-display);font-size:clamp(40px,5vw,60px);font-weight:700;color:var(--ink);letter-spacing:-1.5px;line-height:1.1;margin-bottom:16px}
+.page-hero p{font-size:17px;color:var(--muted);font-weight:300;max-width:540px;line-height:1.7}
+.services-full{padding:80px 60px}
+.service-category{margin-bottom:70px}
+.cat-header{display:flex;align-items:center;gap:16px;margin-bottom:32px;padding-bottom:20px;border-bottom:1.5px dashed var(--border)}
+.cat-badge{font-family:var(--font-sketch);font-size:14px;padding:4px 14px;border-radius:20px;font-weight:600}
+.cat-title{font-family:var(--font-display);font-size:28px;font-weight:500;color:var(--ink);letter-spacing:-0.5px}
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.svc-item-card{background:var(--cream);border:1.5px solid var(--border);border-radius:12px;padding:20px;cursor:pointer;transition:all .2s}
+.svc-item-card:hover{background:#fff;border-color:var(--sage-light);transform:translateY(-2px)}
+.svc-item-card h4{font-family:var(--font-display);font-size:15px;font-weight:500;color:var(--ink);margin-bottom:6px}
+.svc-item-card p{font-size:12px;color:var(--muted);line-height:1.6}
+.svc-price{font-family:var(--font-sketch);font-size:15px;color:var(--sage);font-weight:600;margin-top:10px}
+
+/* ======================== PRICING ======================== */
+.pricing-section{padding:80px 60px}
+.pricing-toggle{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:60px;margin-top:40px}
+.toggle-label{font-size:15px;color:var(--muted)}
+.toggle-label.active{color:var(--ink);font-weight:500}
+.toggle-switch{width:52px;height:28px;background:var(--sage);border-radius:14px;cursor:pointer;position:relative;border:none;transition:background .2s}
+.toggle-switch::after{content:'';position:absolute;width:22px;height:22px;background:#fff;border-radius:50%;top:3px;left:3px;transition:transform .2s}
+.toggle-switch.yearly::after{transform:translateX(24px)}
+.save-badge{background:var(--gold-pale);color:var(--gold);font-family:var(--font-sketch);font-size:13px;padding:2px 10px;border-radius:10px;font-weight:600}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.plan-card{border:1.5px solid var(--border);border-radius:20px;padding:36px;background:var(--paper);transition:all .25s;position:relative}
+.plan-card.featured{background:var(--sage);border-color:var(--sage);color:#fff}
+.plan-card:hover:not(.featured){transform:translateY(-4px)}
+.plan-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--gold);color:#fff;font-family:var(--font-sketch);font-size:13px;padding:4px 16px;border-radius:20px;font-weight:700;white-space:nowrap}
+.plan-name{font-family:var(--font-display);font-size:22px;font-weight:700;margin-bottom:6px}
+.plan-desc{font-size:13px;line-height:1.6;margin-bottom:28px;font-weight:300}
+.plan-price{font-family:var(--font-display);font-size:48px;font-weight:700;letter-spacing:-1.5px;line-height:1}
+.plan-price span{font-size:16px;font-weight:300;font-family:var(--font-body)}
+.plan-period{font-size:13px;color:var(--muted);margin-bottom:28px;margin-top:4px}
+.plan-card.featured .plan-period{color:rgba(255,255,255,.7)}
+.plan-divider{border:none;border-top:1px dashed var(--border);margin:24px 0}
+.plan-card.featured .plan-divider{border-color:rgba(255,255,255,.3)}
+.plan-features{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+.plan-feat{font-size:14px;display:flex;align-items:center;gap:10px}
+.plan-feat-dot{width:16px;height:16px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:10px}
+.feat-yes{background:var(--sage-pale);color:var(--sage)}
+.plan-card.featured .feat-yes{background:rgba(255,255,255,.25);color:#fff}
+.feat-no{background:var(--warm);color:var(--border)}
+.plan-btn{width:100%;padding:14px;border-radius:30px;border:none;font-family:var(--font-body);font-size:15px;font-weight:500;cursor:pointer;transition:all .2s}
+.plan-btn.light{background:var(--sage);color:#fff}
+.plan-btn.light:hover{background:#3a6547}
+.plan-btn.inv{background:#fff;color:var(--sage)}
+.plan-btn.inv:hover{background:var(--sage-pale)}
+
+/* ======================== ABOUT ======================== */
+.about-hero{padding:80px 60px 0;background:var(--cream);border-bottom:1.5px solid var(--border)}
+.about-hero-content{max-width:680px}
+.about-story{padding:80px 60px;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.story-text h2{font-family:var(--font-display);font-size:36px;font-weight:700;color:var(--ink);letter-spacing:-0.8px;margin-bottom:16px}
+.story-text p{font-size:15px;color:var(--muted);line-height:1.8;font-weight:300;margin-bottom:16px}
+.story-sketch-block{background:var(--cream);border:1.5px solid var(--border);border-radius:16px;padding:28px}
+.story-sketch-block blockquote{font-family:var(--font-display);font-size:22px;font-style:italic;font-weight:500;color:var(--ink);line-height:1.5;margin-bottom:12px}
+.story-sketch-block cite{font-family:var(--font-sketch);font-size:16px;color:var(--sage);font-weight:600}
+.values-section{background:var(--cream);border-top:1.5px solid var(--border);padding:80px 60px}
+.values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:50px}
+.value-card{text-align:center;padding:28px 20px;background:var(--paper);border:1.5px solid var(--border);border-radius:16px;transition:all .25s}
+.value-card:hover{border-color:var(--sage-light);transform:translateY(-3px)}
+.value-icon{font-size:36px;margin-bottom:14px;display:block}
+.value-card h4{font-family:var(--font-display);font-size:17px;font-weight:500;color:var(--ink);margin-bottom:8px}
+.value-card p{font-size:13px;color:var(--muted);line-height:1.6}
+.team-section{padding:80px 60px;background:var(--paper)}
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:50px}
+.team-card{text-align:center;padding:28px 20px;border:1.5px solid var(--border);border-radius:16px;background:var(--cream);transition:all .25s}
+.team-card:hover{border-color:var(--sage-light);background:#fff}
+.team-avatar{width:72px;height:72px;border-radius:50%;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;font-family:var(--font-sketch);font-size:24px;font-weight:700}
+.team-card h4{font-family:var(--font-display);font-size:16px;font-weight:500;color:var(--ink);margin-bottom:4px}
+.team-card .role{font-size:12px;color:var(--muted);margin-bottom:8px}
+.team-sketch-note{font-family:var(--font-sketch);font-size:13px;color:var(--sage)}
+
+/* ======================== CONTACT ======================== */
+.contact-wrap{padding:80px 60px;display:grid;grid-template-columns:1fr 1.3fr;gap:80px;align-items:start}
+.contact-info h2{font-family:var(--font-display);font-size:36px;font-weight:700;color:var(--ink);letter-spacing:-0.8px;margin-bottom:14px}
+.contact-info p{font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:40px;font-weight:300}
+.contact-methods{display:flex;flex-direction:column;gap:16px}
+.contact-method{display:flex;align-items:center;gap:14px;padding:18px;background:var(--cream);border:1.5px solid var(--border);border-radius:12px;transition:all .2s}
+.contact-method:hover{border-color:var(--sage-light);background:#fff}
+.cm-icon{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.cm-label{font-size:12px;color:var(--muted);margin-bottom:2px}
+.cm-value{font-size:14px;font-weight:500;color:var(--ink)}
+.contact-form{background:var(--cream);border:1.5px solid var(--border);border-radius:20px;padding:40px}
+.contact-form h3{font-family:var(--font-display);font-size:24px;font-weight:500;color:var(--ink);margin-bottom:28px;letter-spacing:-0.3px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.form-group{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+.form-label{font-size:13px;font-weight:500;color:var(--ink)}
+.form-input,.form-select,.form-textarea{padding:11px 14px;background:var(--paper);border:1.5px solid var(--border);border-radius:10px;font-family:var(--font-body);font-size:14px;color:var(--ink);outline:none;transition:border-color .2s;width:100%}
+.form-input:focus,.form-select:focus,.form-textarea:focus{border-color:var(--sage)}
+.form-textarea{resize:vertical;min-height:100px}
+.form-submit{width:100%;padding:14px;background:var(--sage);color:#fff;border:none;border-radius:30px;font-family:var(--font-body);font-size:16px;font-weight:500;cursor:pointer;transition:all .25s;margin-top:8px}
+.form-submit:hover{background:#3a6547;transform:translateY(-1px)}
+.form-sketch{font-family:var(--font-sketch);font-size:14px;color:var(--muted);text-align:center;margin-top:12px}
+
+/* Footer */
+footer{background:var(--ink);padding:60px 60px 30px;color:rgba(255,255,255,.7)}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:50px}
+.footer-brand .logo-name{color:#fff;margin-bottom:14px;display:block}
+.footer-brand p{font-size:13px;line-height:1.8;max-width:260px}
+.footer-col h5{font-family:var(--font-display);font-size:14px;font-weight:500;color:#fff;margin-bottom:16px;letter-spacing:-0.2px}
+.footer-col a{display:block;font-size:13px;color:rgba(255,255,255,.55);text-decoration:none;margin-bottom:8px;transition:color .2s}
+.footer-col a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:28px;display:flex;justify-content:space-between;align-items:center}
+.footer-bottom p{font-size:12px;color:rgba(255,255,255,.4)}
+.footer-sketch{font-family:var(--font-sketch);font-size:18px;color:var(--sage-light)}
+
+/* Scribble decorations */
+.scribble-arrow{display:inline-block;font-family:var(--font-sketch);font-size:22px;color:var(--rust);transform:rotate(-15deg)}
+.scribble-circle{position:relative;display:inline-block}
+.scribble-circle::before{content:'';position:absolute;inset:-4px -6px;border:2px solid var(--rust);border-radius:50%;transform:rotate(-5deg)}
+
+/* Animations */
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes wiggle{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}
+.float{animation:float 4s ease-in-out infinite}
+.wiggle{animation:wiggle 3s ease-in-out infinite}
+
+/* Responsive rough */
+@media(max-width:900px){
+  .hero-visual{display:none}
+  .why-grid,.services-grid,.cat-grid,.team-grid,.values-grid,.pricing-grid{grid-template-columns:1fr 1fr}
+  .about-story,.contact-wrap,.footer-top{grid-template-columns:1fr}
+  .process-steps{grid-template-columns:1fr 1fr;gap:30px}
+  .process-steps::before{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="logo" href="#" onclick="showPage('home')">
+    <div class="logo-mark">
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="2" width="32" height="32" rx="8" fill="#4a7c59"/>
+        <path d="M10 24 L14 12 L18 20 L22 15 L26 24" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle cx="26" cy="12" r="3" fill="#d4a017"/>
+      </svg>
+    </div>
+    <span class="logo-name">Corp<span>Ease</span></span>
+  </a>
+  <div class="nav-links">
+    <a onclick="showPage('home')" id="nav-home" class="active">Home</a>
+    <a onclick="showPage('services')" id="nav-services">Services</a>
+    <a onclick="showPage('pricing')" id="nav-pricing">Pricing</a>
+    <a onclick="showPage('about')" id="nav-about">About</a>
+    <a onclick="showPage('contact')" id="nav-contact">Contact</a>
+  </div>
+  <button class="nav-cta" onclick="showPage('contact')">Get Started</button>
+</nav>
+
+<!-- ==================== HOME PAGE ==================== -->
+<div id="page-home" class="page active">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-scribbles">
+      <svg width="100%" height="100%" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <!-- Background sketchy lines -->
+        <path d="M800 50 Q900 80 950 140 Q980 180 920 220" stroke="#4a7c59" stroke-width="1.5" fill="none" stroke-dasharray="6,4" opacity=".25"/>
+        <path d="M1050 200 Q1100 240 1080 300 Q1060 350 1000 360" stroke="#c94f2a" stroke-width="1.5" fill="none" stroke-dasharray="4,6" opacity=".2"/>
+        <path d="M750 400 Q820 380 870 430 Q910 470 880 520" stroke="#d4a017" stroke-width="1.5" fill="none" stroke-dasharray="5,5" opacity=".2"/>
+        <!-- Dotted grid area right side -->
+        <g opacity=".12">
+          <circle cx="700" cy="100" r="2.5" fill="#4a7c59"/>
+          <circle cx="740" cy="100" r="2.5" fill="#4a7c59"/>
+          <circle cx="780" cy="100" r="2.5" fill="#4a7c59"/>
+          <circle cx="820" cy="100" r="2.5" fill="#4a7c59"/>
+          <circle cx="860" cy="100" r="2.5" fill="#4a7c59"/>
+          <circle cx="700" cy="140" r="2.5" fill="#4a7c59"/>
+          <circle cx="740" cy="140" r="2.5" fill="#4a7c59"/>
+          <circle cx="780" cy="140" r="2.5" fill="#4a7c59"/>
+          <circle cx="820" cy="140" r="2.5" fill="#4a7c59"/>
+          <circle cx="700" cy="180" r="2.5" fill="#4a7c59"/>
+          <circle cx="740" cy="180" r="2.5" fill="#4a7c59"/>
+          <circle cx="780" cy="180" r="2.5" fill="#4a7c59"/>
+          <circle cx="700" cy="220" r="2.5" fill="#4a7c59"/>
+          <circle cx="740" cy="220" r="2.5" fill="#4a7c59"/>
+        </g>
+        <!-- Main illustration - abstract business figure sketch -->
+        <g transform="translate(680, 60)" opacity=".9">
+          <!-- Document stack illustration -->
+          <rect x="20" y="80" width="160" height="210" rx="10" fill="#f2ede0" stroke="#c8bda8" stroke-width="2"/>
+          <rect x="10" y="70" width="160" height="210" rx="10" fill="#faf8f3" stroke="#c8bda8" stroke-width="2"/>
+          <rect x="0" y="60" width="160" height="210" rx="10" fill="#fff" stroke="#4a7c59" stroke-width="2.5"/>
+          <!-- Lines on doc -->
+          <path d="M20 100 L140 100" stroke="#c8bda8" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M20 120 L140 120" stroke="#c8bda8" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M20 140 L100 140" stroke="#c8bda8" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M20 160 L120 160" stroke="#e8dfc8" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M20 180 L80 180" stroke="#e8dfc8" stroke-width="1.5" stroke-linecap="round"/>
+          <!-- Stamp/seal -->
+          <circle cx="110" cy="200" r="24" fill="#d4ead8" stroke="#4a7c59" stroke-width="2" stroke-dasharray="4,3"/>
+          <text x="110" y="205" text-anchor="middle" font-family="Fraunces,serif" font-size="11" fill="#4a7c59" font-weight="700">✓ OK</text>
+          <!-- Pencil sketch arrow -->
+          <path d="M170 150 Q220 120 240 170 Q245 190 220 200" stroke="#c94f2a" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <polygon points="215,208 225,194 230,206" fill="#c94f2a"/>
+          <!-- Coin stack -->
+          <ellipse cx="290" cy="200" rx="30" ry="10" fill="#d4a017" opacity=".7"/>
+          <rect x="260" y="170" width="60" height="30" rx="2" fill="#d4a017" opacity=".8"/>
+          <ellipse cx="290" cy="170" rx="30" ry="10" fill="#e8b820"/>
+          <ellipse cx="290" cy="155" rx="30" ry="10" fill="#d4a017" opacity=".7"/>
+          <rect x="260" y="125" width="60" height="30" rx="2" fill="#d4a017" opacity=".8"/>
+          <ellipse cx="290" cy="125" rx="30" ry="10" fill="#e8b820"/>
+          <!-- Growth arrow -->
+          <path d="M240 300 L280 260 L310 280 L360 220" stroke="#4a7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <polygon points="355,213 368,216 358,226" fill="#4a7c59"/>
+          <!-- Sketch asterisk decorations -->
+          <text x="370" y="100" font-family="Caveat,cursive" font-size="32" fill="#c94f2a" opacity=".6" font-weight="700">✦</text>
+          <text x="-30" y="320" font-family="Caveat,cursive" font-size="24" fill="#d4a017" opacity=".5" font-weight="700">✦</text>
+          <text x="340" y="320" font-family="Caveat,cursive" font-size="20" fill="#4a7c59" opacity=".4">✿</text>
+        </g>
+        <!-- Corner sketch decorations -->
+        <text x="90" y="580" font-family="Caveat,cursive" font-size="18" fill="#4a7c59" opacity=".15" transform="rotate(-30,90,580)">compliance made easy</text>
+        <path d="M1100 550 Q1150 520 1160 560 Q1165 590 1130 600" stroke="#4a7c59" stroke-width="1.5" fill="none" opacity=".2" stroke-dasharray="4,4"/>
+      </svg>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span>✦ India's trusted compliance partner</span>
+      </div>
+      <h1>
+        Your business,<br>
+        <em>compliantly</em><br>
+        <span class="underline-sketch">done right.</span>
+      </h1>
+      <p class="hero-desc">From company registration to annual filings — we simplify every compliance step so you can focus on building what matters.</p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="showPage('services')">Explore Services</button>
+        <button class="btn-secondary" onclick="showPage('pricing')">View Pricing</button>
+        <span class="hero-sketch-note">← it's free to start!</span>
+      </div>
+      <div class="stats-row" style="margin-top:50px">
+        <div class="stat-item">
+          <span class="stat-num">50K+</span>
+          <span class="stat-label">Businesses registered</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">99%</span>
+          <span class="stat-label">Filing success rate</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num"><span class="stat-sketch">₹0</span></span>
+          <span class="stat-label">Hidden charges</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services strip -->
+  <div class="services-strip">
+    <div class="service-pill"><div class="sp-dot"></div><span class="sp-label">Business Registration</span></div>
+    <div class="service-pill"><div class="sp-dot"></div><span class="sp-label">GST Registration & Filing</span></div>
+    <div class="service-pill"><div class="sp-dot"></div><span class="sp-label">Income Tax Returns</span></div>
+    <div class="service-pill"><div class="sp-dot"></div><span class="sp-label">Trademark Protection</span></div>
+    <div class="service-pill"><div class="sp-dot"></div><span class="sp-label">MCA / ROC Compliance</span></div>
+    <div class="service-pill"><div class="sp-dot"></div><span class="sp-label">HR & Payroll</span></div>
+    <div class="service-pill"><div class="sp-dot" style="background:var(--rust)"></div><span class="sp-label">Global Expansion</span></div>
+  </div>
+
+  <!-- Why Section -->
+  <section class="why-section">
+    <span class="section-eyebrow">// why corpease</span>
+    <h2 class="section-title">Compliance shouldn't<br>feel like a <em>maze.</em></h2>
+    <p class="section-sub">We've rebuilt every step from scratch — faster, clearer, and actually human. Here's what's different about us.</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-card-icon sage">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 14 L10 20 L24 8" stroke="#4a7c59" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <span class="why-card-sketch">simple ✓</span>
+        <h3>No jargon, ever</h3>
+        <p>We translate complex legal and tax requirements into plain language. You'll always know exactly what's happening and why.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon rust">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" stroke="#c94f2a" stroke-width="2"/><path d="M14 8 L14 14 L18 16" stroke="#c94f2a" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <span class="why-card-sketch">fast ⚡</span>
+        <h3>Lightning turnaround</h3>
+        <p>Most registrations completed in 3–5 business days. Our streamlined process eliminates unnecessary back-and-forth entirely.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon gold">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M7 20 L14 8 L21 20 Z" stroke="#d4a017" stroke-width="2" fill="none" stroke-linejoin="round"/><circle cx="14" cy="14" r="3" fill="#d4a017"/></svg>
+        </div>
+        <span class="why-card-sketch">clear ★</span>
+        <h3>Transparent pricing</h3>
+        <p>Fixed fees, no surprises. You see the full cost upfront — government fees, professional fees, everything included.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon navy">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="6" y="6" width="16" height="16" rx="4" stroke="#1e3a5f" stroke-width="2"/><path d="M10 14 L13 17 L18 11" stroke="#1e3a5f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <span class="why-card-sketch">secure 🔒</span>
+        <h3>100% secure & compliant</h3>
+        <p>Your documents are encrypted and stored securely. We follow all data protection guidelines with full audit trails.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon sage">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="10" cy="12" r="4" stroke="#4a7c59" stroke-width="2"/><circle cx="18" cy="12" r="4" stroke="#4a7c59" stroke-width="2"/><path d="M4 22 Q7 17 10 17 Q14 17 14 17 Q17 17 21 22" stroke="#4a7c59" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+        </div>
+        <span class="why-card-sketch">expert 👋</span>
+        <h3>Dedicated experts</h3>
+        <p>Every account gets a dedicated CA and CS expert. Real humans, not chatbots — available via call, chat, or email.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon rust">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M6 22 L8 14 L14 6 L20 14 L22 22" stroke="#c94f2a" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 22 L10 18 L14 16 L18 18 L18 22" stroke="#c94f2a" stroke-width="2" fill="none" stroke-linejoin="round"/></svg>
+        </div>
+        <span class="why-card-sketch">all-in ♥</span>
+        <h3>End-to-end coverage</h3>
+        <p>From day zero to ongoing compliance — we handle registration, filings, renewals, and everything in between.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="process-section">
+    <span class="section-eyebrow">// how it works</span>
+    <h2 class="section-title">Four steps to<br><em>fully compliant.</em></h2>
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h4>Pick your service</h4>
+        <p>Browse our catalogue and choose exactly what your business needs right now.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h4>Submit documents</h4>
+        <p>Our smart checklist tells you exactly what to upload — nothing more, nothing less.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h4>We handle the rest</h4>
+        <p>Your dedicated expert prepares, reviews, and files everything on your behalf.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h4>Receive & relax</h4>
+        <p>Get certificates, confirmations, and ongoing reminders — all in your dashboard.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services preview -->
+  <section class="services-preview">
+    <span class="section-eyebrow">// our services</span>
+    <h2 class="section-title">Everything your<br>business <em>needs.</em></h2>
+    <p class="section-sub">One platform for every compliance requirement — from day one to ongoing operations.</p>
+    <div class="services-grid">
+      <div class="srv-card sage-accent">
+        <span class="srv-card-tag sage">Startup</span>
+        <h3>Business Registration</h3>
+        <p>Register your Private Limited, LLP, or OPC company with full government approval.</p>
+        <div class="srv-card-items">
+          <div class="srv-item">Private Limited Company</div>
+          <div class="srv-item">Limited Liability Partnership</div>
+          <div class="srv-item">One Person Company</div>
+          <div class="srv-item">Section 8 / NGO</div>
+        </div>
+        <span class="srv-arrow">→</span>
+      </div>
+      <div class="srv-card">
+        <span class="srv-card-tag rust">Tax</span>
+        <h3>GST Services</h3>
+        <p>Complete GST registration, monthly/quarterly returns, and reconciliation support.</p>
+        <div class="srv-card-items">
+          <div class="srv-item">GST Registration</div>
+          <div class="srv-item">Monthly GSTR-1 & 3B</div>
+          <div class="srv-item">Annual GST Return</div>
+          <div class="srv-item">GST Audit Support</div>
+        </div>
+        <span class="srv-arrow">→</span>
+      </div>
+      <div class="srv-card">
+        <span class="srv-card-tag gold">IP</span>
+        <h3>Trademark & IP</h3>
+        <p>Protect your brand with trademark registration, renewal, and IP strategy support.</p>
+        <div class="srv-card-items">
+          <div class="srv-item">Trademark Registration</div>
+          <div class="srv-item">Trademark Renewal</div>
+          <div class="srv-item">Copyright Registration</div>
+          <div class="srv-item">IP Portfolio Management</div>
+        </div>
+        <span class="srv-arrow">→</span>
+      </div>
+      <div class="srv-card">
+        <span class="srv-card-tag navy">Income Tax</span>
+        <h3>Income Tax Filing</h3>
+        <p>Personal and business income tax returns filed accurately and on time, every year.</p>
+        <div class="srv-card-items">
+          <div class="srv-item">ITR-1 to ITR-7 Filing</div>
+          <div class="srv-item">Tax Planning Advisory</div>
+          <div class="srv-item">TDS Returns</div>
+        </div>
+        <span class="srv-arrow">→</span>
+      </div>
+      <div class="srv-card">
+        <span class="srv-card-tag sage">MCA</span>
+        <h3>MCA / ROC Compliance</h3>
+        <p>Annual filings, director changes, and all Registrar of Companies requirements.</p>
+        <div class="srv-card-items">
+          <div class="srv-item">Annual ROC Filings</div>
+          <div class="srv-item">Director KYC (DIR-3)</div>
+          <div class="srv-item">Share Transfer</div>
+        </div>
+        <span class="srv-arrow">→</span>
+      </div>
+      <div class="srv-card">
+        <span class="srv-card-tag rust">HR</span>
+        <h3>HR & Payroll</h3>
+        <p>End-to-end payroll processing, PF/ESI compliance, and HR documentation support.</p>
+        <div class="srv-card-items">
+          <div class="srv-item">Payroll Processing</div>
+          <div class="srv-item">PF & ESI Registration</div>
+          <div class="srv-item">Labour Law Compliance</div>
+        </div>
+        <span class="srv-arrow">→</span>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px">
+      <button class="btn-secondary" onclick="showPage('services')" style="font-size:15px">View all services &nbsp;→</button>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testi-section">
+    <span class="section-eyebrow">// what clients say</span>
+    <h2 class="section-title">Real businesses,<br><em>real results.</em></h2>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">CorpEase registered our Private Limited company in just 4 days. The team was incredibly responsive and the whole process felt effortless.</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:var(--sage-pale);color:var(--sage)">RK</div>
+          <div>
+            <div class="testi-name">Rahul Kapoor</div>
+            <div class="testi-role">Founder, Kapoor Tech Pvt. Ltd.</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Finally a compliance partner that doesn't make me feel dumb. Plain language, zero surprises on billing, and they actually pick up the phone.</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:var(--rust-pale);color:var(--rust)">PS</div>
+          <div>
+            <div class="testi-name">Priya Sharma</div>
+            <div class="testi-role">CEO, GreenLeaf Foods</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Our trademark was registered without a single objection. The team knew exactly what class to file under and guided us through every step.</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:var(--gold-pale);color:var(--gold)">AM</div>
+          <div>
+            <div class="testi-name">Arjun Mehta</div>
+            <div class="testi-role">Co-Founder, Mehta Lifestyle</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Band -->
+  <section class="cta-band">
+    <span class="cta-sketch">✦ start now ✦</span>
+    <h2>Ready to get<br><em>compliant?</em></h2>
+    <p>Join thousands of businesses that trust CorpEase for stress-free compliance. Start your journey today.</p>
+    <button class="btn-white" onclick="showPage('contact')">Talk to an Expert &nbsp;→</button>
+    <p style="color:rgba(255,255,255,.5);font-size:13px;margin-top:16px;margin-bottom:0">No commitment. Free first consultation.</p>
+  </section>
+</div>
+
+<!-- ==================== SERVICES PAGE ==================== -->
+<div id="page-services" class="page">
+  <div class="page-hero">
+    <span class="page-hero-eyebrow">// all services</span>
+    <h1>Everything your<br>business ever needs.</h1>
+    <p>From the first registration to annual filings, trademark protection to payroll — one platform, one team, zero hassle.</p>
+  </div>
+  <div class="services-full">
+    <!-- Startup -->
+    <div class="service-category">
+      <div class="cat-header">
+        <span class="cat-badge" style="background:var(--sage-pale);color:var(--sage)">Startup & Registration</span>
+        <span class="cat-title">Start your business right</span>
+      </div>
+      <div class="cat-grid">
+        <div class="svc-item-card"><h4>Private Limited Company</h4><p>Most popular structure for startups seeking investment & limited liability</p><div class="svc-price">from ₹6,999</div></div>
+        <div class="svc-item-card"><h4>Limited Liability Partnership</h4><p>Flexible professional structure combining partnership benefits with limited liability</p><div class="svc-price">from ₹5,499</div></div>
+        <div class="svc-item-card"><h4>One Person Company</h4><p>Solo entrepreneur's structure with full corporate benefits and single ownership</p><div class="svc-price">from ₹4,999</div></div>
+        <div class="svc-item-card"><h4>Section 8 Company / NGO</h4><p>Register a non-profit organization with special tax benefits under Section 8</p><div class="svc-price">from ₹8,999</div></div>
+        <div class="svc-item-card"><h4>Sole Proprietorship</h4><p>Simplest business structure for freelancers and small traders</p><div class="svc-price">from ₹1,499</div></div>
+        <div class="svc-item-card"><h4>Partnership Firm</h4><p>Traditional partnership registration with deed drafting and notarisation</p><div class="svc-price">from ₹2,999</div></div>
+        <div class="svc-item-card"><h4>MSME / Udyam Registration</h4><p>Officially register your micro, small or medium enterprise for scheme benefits</p><div class="svc-price">from ₹999</div></div>
+        <div class="svc-item-card"><h4>Startup India Recognition</h4><p>Get DPIIT recognition to access Startup India benefits and tax exemptions</p><div class="svc-price">from ₹2,499</div></div>
+      </div>
+    </div>
+    <!-- GST -->
+    <div class="service-category">
+      <div class="cat-header">
+        <span class="cat-badge" style="background:var(--rust-pale);color:var(--rust)">GST</span>
+        <span class="cat-title">GST registration & compliance</span>
+      </div>
+      <div class="cat-grid">
+        <div class="svc-item-card"><h4>GST Registration</h4><p>New GST number for your business — GSTIN in 3–5 working days</p><div class="svc-price">from ₹1,499</div></div>
+        <div class="svc-item-card"><h4>GSTR-1 & GSTR-3B Filing</h4><p>Monthly or quarterly outward supply and summary return filing</p><div class="svc-price">from ₹999/mo</div></div>
+        <div class="svc-item-card"><h4>Annual GST Return (GSTR-9)</h4><p>Annual reconciliation return covering all transactions of the year</p><div class="svc-price">from ₹2,999</div></div>
+        <div class="svc-item-card"><h4>GST Audit (GSTR-9C)</h4><p>Mandatory audit for businesses with turnover above ₹2 crore</p><div class="svc-price">from ₹4,999</div></div>
+        <div class="svc-item-card"><h4>GST LUT Filing</h4><p>Letter of Undertaking for zero-rated exports without paying GST</p><div class="svc-price">from ₹1,299</div></div>
+        <div class="svc-item-card"><h4>GST Cancellation</h4><p>Formally cancel your GSTIN registration with proper documentation</p><div class="svc-price">from ₹1,999</div></div>
+      </div>
+    </div>
+    <!-- Trademark -->
+    <div class="service-category">
+      <div class="cat-header">
+        <span class="cat-badge" style="background:var(--gold-pale);color:var(--gold)">Trademark & IP</span>
+        <span class="cat-title">Protect what you've built</span>
+      </div>
+      <div class="cat-grid">
+        <div class="svc-item-card"><h4>Trademark Registration</h4><p>Register your brand name, logo, or tagline under the correct class</p><div class="svc-price">from ₹6,999</div></div>
+        <div class="svc-item-card"><h4>Trademark Search</h4><p>Comprehensive availability search before filing to avoid conflicts</p><div class="svc-price">from ₹999</div></div>
+        <div class="svc-item-card"><h4>Trademark Renewal</h4><p>Renew your 10-year trademark protection before it lapses</p><div class="svc-price">from ₹4,999</div></div>
+        <div class="svc-item-card"><h4>Copyright Registration</h4><p>Protect original works — software, music, art, and literary content</p><div class="svc-price">from ₹3,499</div></div>
+        <div class="svc-item-card"><h4>Patent Filing</h4><p>File provisional or complete patent specifications for your innovation</p><div class="svc-price">from ₹14,999</div></div>
+        <div class="svc-item-card"><h4>Design Registration</h4><p>Protect the unique visual appearance and aesthetics of your product</p><div class="svc-price">from ₹5,999</div></div>
+      </div>
+    </div>
+    <!-- Income Tax -->
+    <div class="service-category">
+      <div class="cat-header">
+        <span class="cat-badge" style="background:var(--navy-pale);color:var(--navy)">Income Tax</span>
+        <span class="cat-title">Personal & business tax filing</span>
+      </div>
+      <div class="cat-grid">
+        <div class="svc-item-card"><h4>ITR-1 (Salaried)</h4><p>Simple income tax return for salaried individuals with standard deductions</p><div class="svc-price">from ₹999</div></div>
+        <div class="svc-item-card"><h4>ITR-3 / ITR-4 (Business)</h4><p>Business income returns for proprietors and professionals</p><div class="svc-price">from ₹2,499</div></div>
+        <div class="svc-item-card"><h4>Company ITR (ITR-6)</h4><p>Annual income tax return filing for registered companies</p><div class="svc-price">from ₹4,999</div></div>
+        <div class="svc-item-card"><h4>TDS Return Filing</h4><p>Quarterly TDS returns (24Q, 26Q) for employers and payers</p><div class="svc-price">from ₹1,499/qtr</div></div>
+        <div class="svc-item-card"><h4>Tax Planning Advisory</h4><p>Strategic advice to legally minimise your tax burden for the year</p><div class="svc-price">from ₹2,999</div></div>
+        <div class="svc-item-card"><h4>Income Tax Notice Reply</h4><p>Expert response to income tax department notices and scrutiny</p><div class="svc-price">from ₹3,999</div></div>
+      </div>
+    </div>
+  </div>
+  <section class="cta-band">
+    <h2>Not sure where<br>to <em>start?</em></h2>
+    <p>Our experts will assess your exact requirements and recommend the right services for you.</p>
+    <button class="btn-white" onclick="showPage('contact')">Get Free Consultation →</button>
+  </section>
+</div>
+
+<!-- ==================== PRICING PAGE ==================== -->
+<div id="page-pricing" class="page">
+  <div class="page-hero">
+    <span class="page-hero-eyebrow">// pricing</span>
+    <h1>Simple, transparent<br>pricing.</h1>
+    <p>No surprises, no hidden fees. Pick a plan that suits your business stage — or buy individual services à la carte.</p>
+  </div>
+  <div class="pricing-section">
+    <div class="pricing-toggle">
+      <span class="toggle-label active" id="tog-monthly">Monthly</span>
+      <button class="toggle-switch" id="billing-toggle" onclick="toggleBilling()"></button>
+      <span class="toggle-label" id="tog-yearly">Yearly</span>
+      <span class="save-badge">Save 20%</span>
+    </div>
+    <div class="pricing-grid">
+      <!-- Starter -->
+      <div class="plan-card">
+        <div class="plan-name">Starter</div>
+        <div class="plan-desc" style="color:var(--muted)">For solo founders and small businesses just getting started.</div>
+        <div class="plan-price" id="price-starter">₹1,999<span>/mo</span></div>
+        <div class="plan-period" id="period-starter">Billed monthly</div>
+        <hr class="plan-divider">
+        <div class="plan-features">
+          <div class="plan-feat"><span class="plan-feat-dot feat-yes">✓</span><span style="color:var(--muted);font-size:14px">1 Business Registration</span></div>
+          <div class="plan-feat"><span class="plan-feat-dot feat-yes">✓</span><span style="color:var(--muted);font-size:14px">GST Registration</span></div>
+          <div class="plan-feat"><span class="plan-feat-dot feat-yes">✓</span><span style="color:var(--muted);font-size:14px">Quarterly ITR Filing</span></div>
+          <div class="plan-feat"><span class="plan-feat-dot feat-yes">✓</span><span style="color:var(--muted);font-size:14px">Email Support</span></div>
+          <div class="plan-feat"><span class="plan-feat-dot feat-no">✕</span><span style="color:var(--border);font-size:14px">Trademark Filing</span></div>
+          <div class="plan-feat"><span class="plan-feat-dot feat-no">✕</span><span style="color:var(--border);font-size:14px">Dedicated CA</span></div>
+          <div class="plan-feat"><span class="plan-feat-dot feat-no">✕</span><span style="color:var(--border);font-size:14px">MCA Compliance Pack</span></div>
+          <div class="plan-feat"><span class="plan-feat-dot feat-no">✕</span><span style="color:var(--border);font-size:14px">Payroll Processing</span></div>
+        </div>
+        <button class="plan-btn light" onclick="showPage('contact')">Get Started</button>
+      </div>
+      <!-- Growth - Featured -->
+      <div class="plan-card featured" style="position:relative">
+        <div class="plan-badge">Most Popular ✦</div>
+        <div class="plan-name" style="color:#fff">Growth</div>
+        <div class="plan-desc" style="color:rgba(255,255,255,.7)">For growing companies that need full compliance coverage.</div>
+        <div class="plan-price" style="color:#fff" id="price-growth">₹3,999<span style="font-weight:300;color:rgba(255,255,255,.7)">/mo</span></div>
+        <div class="plan-period" id="period-growth">Billed monthly</div>
+        <hr class="plan-divider">
+        <div class="plan-features">
+          <div class="plan-feat"><span class="plan-feat-dot feat-yes">✓</span><span style="color:rgba(255,255,255,.9);font-size:14px">Everything in Starter</span></div>
+          <div class="plan-feat"><span class="plan-feat-dot feat-yes">✓</span><span style="color:rgba(255,255,255,.9);font-size:14px">1 Trademark Registration</span></div>
+          <div class="plan-feat"><span class="plan-feat-dot feat-yes">✓</span><span style="color:rgba(255,255,255,.9);font-size:14px">Monthly GST Filing</span></div>
+          <div class="plan-feat"><span class="plan-feat-dot feat-yes">✓</span><span style="color:rgba(255,255,255,.9);font-size:14px">Dedicated CA Support</span></div>
+          <div class="plan-feat"><span class="plan-feat-dot feat-yes">✓</span><span style="color:rgba(255,255,255,.9);font-size:14px">Annual MCA Filing</span></div>
+          <div class="plan-feat"><span class="plan-feat-dot feat-yes">✓</span><span style="color:rgba(255,255,255,.9);font-size:14px">Priority Chat & Call</span></div>
+          <div class="plan-feat"><span class="plan-feat-dot feat-no" style="background:rgba(255,255,255,.2);color:rgba(255,255,255,.4)">✕</span><span style="color:rgba(255,255,255,.45);font-size:14px">Payroll Processing</span></div>
+          <div class="plan-feat"><span class="plan-feat-dot feat-no" style="background:rgba(255,255,255,.2);color:rgba(255,255,255,.4)">✕</span><span style="color:rgba(255,255,255,.45);font-size:14px">Multi-entity Support</span></div>
+        </div>
+        <button class="plan-btn inv" onclick="showPage('contact')">Get Started</button>
+      </div>
+      <!-- Enterprise -->
+      <div class="plan-card">
+        <div class="plan-name">Enterprise</div>
+        <div class="plan-desc" style="color:var(--muted)">For established companies needing complete, managed compliance.</div>
+        <div class="plan-price" id="price-enterprise">₹7,999<span>/mo</span></div>
+        <div class="plan-period" id="period-enterprise">Billed monthly</div>
+        <hr class="plan-divider">
+        <div class="plan-features">
+          <div class="plan-feat"><span class="plan-feat-dot feat-yes">✓</span><span style="color:var(--muted);font-size:14px">Everything in Growth</span></div>
+          <div class="plan-feat"><span class="plan-feat-dot feat-yes">✓</span><span style="color:var(--muted);font-size:14px">Payroll Processing (50 emp)</span></div>
+          <div class="plan-feat"><span class="plan-feat-dot feat-yes">✓</span><span style="color:var(--muted);font-size:14px">Multi-entity Support</span></div>
+          <div class="plan-feat"><span class="plan-feat-dot feat-yes">✓</span><span style="color:var(--muted);font-size:14px">Unlimited Trademark</span></div>
+          <div class="plan-feat"><span class="plan-feat-dot feat-yes">✓</span><span style="color:var(--muted);font-size:14px">Dedicated Account Manager</span></div>
+          <div class="plan-feat"><span class="plan-feat-dot feat-yes">✓</span><span style="color:var(--muted);font-size:14px">Tax Planning Advisory</span></div>
+          <div class="plan-feat"><span class="plan-feat-dot feat-yes">✓</span><span style="color:var(--muted);font-size:14px">Legal Document Drafting</span></div>
+          <div class="plan-feat"><span class="plan-feat-dot feat-yes">✓</span><span style="color:var(--muted);font-size:14px">24/7 Priority Support</span></div>
+        </div>
+        <button class="plan-btn light" onclick="showPage('contact')">Contact Sales</button>
+      </div>
+    </div>
+    <!-- Alacarte note -->
+    <div style="background:var(--cream);border:1.5px dashed var(--border);border-radius:16px;padding:32px;margin-top:50px;display:flex;justify-content:space-between;align-items:center;gap:20px">
+      <div>
+        <span style="font-family:var(--font-sketch);font-size:16px;color:var(--rust);font-weight:600;display:block;margin-bottom:6px">à la carte ✦</span>
+        <h3 style="font-family:var(--font-display);font-size:22px;font-weight:500;color:var(--ink);margin-bottom:8px">Just need one thing?</h3>
+        <p style="font-size:14px;color:var(--muted);font-weight:300">Buy individual services without a subscription. Browse our full catalogue and pay only for what you need.</p>
+      </div>
+      <button class="btn-primary" onclick="showPage('services')" style="white-space:nowrap;flex-shrink:0">Browse Services →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== ABOUT PAGE ==================== -->
+<div id="page-about" class="page">
+  <div class="about-hero page-hero">
+    <div class="about-hero-content">
+      <span class="page-hero-eyebrow">// our story</span>
+      <h1>We're on a mission<br>to make compliance<br><em style="font-style:italic;color:var(--sage)">human.</em></h1>
+      <p style="margin-top:16px">Founded in 2018 by a team of CAs, lawyers, and engineers tired of watching great businesses struggle with needless bureaucracy.</p>
+    </div>
+  </div>
+
+  <div class="about-story">
+    <div class="story-text">
+      <h2>From frustration<br>to a platform</h2>
+      <p>Our founders spent years watching businesses lose momentum to compliance confusion — missed deadlines, wrong filings, surprise penalties. The paperwork was getting in the way of the real work.</p>
+      <p>So in 2018, we built CorpEase — a platform that combines expert professionals with smart workflows to make compliance genuinely effortless. We started with just company registration and today cover everything a business needs.</p>
+      <p>We've since helped over 50,000 businesses across India navigate registrations, tax filings, trademark protection, and annual compliance. Every feature we ship is born from a real problem a client faced.</p>
+    </div>
+    <div>
+      <div class="story-sketch-block" style="margin-bottom:24px">
+        <blockquote>"Compliance doesn't have to be intimidating — it just needs the right people explaining it in the right way."</blockquote>
+        <cite>— Aditya Sharma, Co-Founder & CEO</cite>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+        <div style="background:var(--sage-pale);border:1.5px solid var(--sage-light);border-radius:12px;padding:20px;text-align:center">
+          <span style="font-family:var(--font-display);font-size:36px;font-weight:700;color:var(--sage);display:block">50K+</span>
+          <span style="font-size:13px;color:var(--muted)">Businesses served</span>
+        </div>
+        <div style="background:var(--rust-pale);border:1.5px solid #e8a090;border-radius:12px;padding:20px;text-align:center">
+          <span style="font-family:var(--font-display);font-size:36px;font-weight:700;color:var(--rust);display:block">7+</span>
+          <span style="font-size:13px;color:var(--muted)">Years of expertise</span>
+        </div>
+        <div style="background:var(--gold-pale);border:1.5px solid #e8c060;border-radius:12px;padding:20px;text-align:center">
+          <span style="font-family:var(--font-display);font-size:36px;font-weight:700;color:var(--gold);display:block">200+</span>
+          <span style="font-size:13px;color:var(--muted)">Expert professionals</span>
+        </div>
+        <div style="background:var(--navy-pale);border:1.5px solid #a0bcd8;border-radius:12px;padding:20px;text-align:center">
+          <span style="font-family:var(--font-display);font-size:36px;font-weight:700;color:var(--navy);display:block">99%</span>
+          <span style="font-size:13px;color:var(--muted)">Filing success rate</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="values-section">
+    <span class="section-eyebrow">// our values</span>
+    <h2 class="section-title">What we<br><em>stand for.</em></h2>
+    <div class="values-grid">
+      <div class="value-card">
+        <span class="value-icon">🌱</span>
+        <h4>Founder-first</h4>
+        <p>Everything we build prioritises the founder's time and sanity. We exist to serve you, not the other way.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-icon">🔍</span>
+        <h4>Radical transparency</h4>
+        <p>No hidden fees, no vague timelines. We tell you exactly what's happening at every step.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-icon">⚡</span>
+        <h4>Speed as a feature</h4>
+        <p>We believe slow bureaucracy is a design problem. Our workflows are engineered to move fast.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-icon">🤝</span>
+        <h4>Long-term partnership</h4>
+        <p>We don't do one-time transactions. We're your compliance partner for every stage of your growth.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-section">
+    <span class="section-eyebrow">// the team</span>
+    <h2 class="section-title">The people<br>behind <em>CorpEase.</em></h2>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar" style="background:var(--sage-pale);color:var(--sage)">AS</div>
+        <h4>Aditya Sharma</h4>
+        <div class="role">Co-Founder & CEO</div>
+        <div class="team-sketch-note">CA · 12 yrs exp</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:var(--rust-pale);color:var(--rust)">NP</div>
+        <h4>Neha Patel</h4>
+        <div class="role">Co-Founder & CTO</div>
+        <div class="team-sketch-note">IIT-B · 10 yrs</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:var(--gold-pale);color:var(--gold)">RV</div>
+        <h4>Rohan Varma</h4>
+        <div class="role">Head of Legal</div>
+        <div class="team-sketch-note">CS · 9 yrs exp</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:var(--navy-pale);color:var(--navy)">SK</div>
+        <h4>Sanya Khanna</h4>
+        <div class="role">Head of Compliance</div>
+        <div class="team-sketch-note">CA · 8 yrs exp</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ==================== CONTACT PAGE ==================== -->
+<div id="page-contact" class="page">
+  <div class="page-hero">
+    <span class="page-hero-eyebrow">// contact us</span>
+    <h1>Let's talk<br>about your business.</h1>
+    <p>Our experts are ready to understand your needs and recommend the right path forward — no sales pressure.</p>
+  </div>
+  <div class="contact-wrap">
+    <div class="contact-info">
+      <h2>Get in touch</h2>
+      <p>Whether you have a simple question or need a full compliance roadmap, we're happy to help. Average response time: under 2 hours.</p>
+      <div class="contact-methods">
+        <div class="contact-method">
+          <div class="cm-icon" style="background:var(--sage-pale)">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M4 4h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" stroke="#4a7c59" stroke-width="1.5" fill="none"/><polyline points="2,6 11,13 20,6" stroke="#4a7c59" stroke-width="1.5" fill="none"/></svg>
+          </div>
+          <div><div class="cm-label">Email us</div><div class="cm-value">hello@corpease.in</div></div>
+        </div>
+        <div class="contact-method">
+          <div class="cm-icon" style="background:var(--rust-pale)">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 12l5 2v4a2 2 0 0 1-2 2C7.163 20 2 14.837 2 8a2 2 0 0 1 2-2h1z" stroke="#c94f2a" stroke-width="1.5" fill="none" stroke-linejoin="round"/></svg>
+          </div>
+          <div><div class="cm-label">Call us</div><div class="cm-value">+91 98765 43210</div></div>
+        </div>
+        <div class="contact-method">
+          <div class="cm-icon" style="background:var(--gold-pale)">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="9" r="4" stroke="#d4a017" stroke-width="1.5"/><path d="M3 20c0-4 3.6-7 8-7s8 3 8 7" stroke="#d4a017" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div><div class="cm-label">Book a call</div><div class="cm-value">Free 30-min consultation</div></div>
+        </div>
+        <div class="contact-method">
+          <div class="cm-icon" style="background:var(--navy-pale)">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M3 11.5A8.5 8.5 0 1 1 11.5 20" stroke="#1e3a5f" stroke-width="1.5" fill="none"/><path d="M3 20V14h6" stroke="#1e3a5f" stroke-width="1.5" fill="none" stroke-linejoin="round"/></svg>
+          </div>
+          <div><div class="cm-label">Response time</div><div class="cm-value">Under 2 business hours</div></div>
+        </div>
+      </div>
+      <div style="margin-top:32px;background:var(--cream);border:1.5px dashed var(--border);border-radius:12px;padding:20px">
+        <span style="font-family:var(--font-sketch);font-size:14px;color:var(--rust);display:block;margin-bottom:8px">offices ✦</span>
+        <p style="font-size:14px;color:var(--muted);line-height:1.7;font-weight:300">
+          <strong style="color:var(--ink);font-weight:500">Ahmedabad HQ</strong><br>
+          4th Floor, One Business Park,<br>Science City Road, Sola, Ahmedabad — 380060
+        </p>
+      </div>
+    </div>
+    <div class="contact-form">
+      <h3>Send us a message</h3>
+      <div class="form-row">
+        <div class="form-group" style="margin-bottom:0">
+          <label class="form-label">First name</label>
+          <input class="form-input" type="text" placeholder="Rahul">
+        </div>
+        <div class="form-group" style="margin-bottom:0">
+          <label class="form-label">Last name</label>
+          <input class="form-input" type="text" placeholder="Sharma">
+        </div>
+      </div>
+      <div class="form-group" style="margin-top:16px">
+        <label class="form-label">Email address</label>
+        <input class="form-input" type="email" placeholder="rahul@yourstartup.com">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Phone number</label>
+        <input class="form-input" type="tel" placeholder="+91 98765 43210">
+      </div>
+      <div class="form-group">
+        <label class="form-label">What do you need help with?</label>
+        <select class="form-select">
+          <option value="">Select a service...</option>
+          <option>Business Registration</option>
+          <option>GST Registration / Filing</option>
+          <option>Income Tax Filing</option>
+          <option>Trademark Registration</option>
+          <option>MCA / ROC Compliance</option>
+          <option>HR & Payroll</option>
+          <option>Global Expansion</option>
+          <option>Subscription Plans</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Tell us more</label>
+        <textarea class="form-textarea" placeholder="Briefly describe your business and what you're looking for — this helps us prepare for our call..."></textarea>
+      </div>
+      <button class="form-submit" onclick="handleFormSubmit()">Send Message →</button>
+      <p class="form-sketch">✦ We'll get back to you within 2 hours ✦</p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="logo-name">Corp<span style="color:var(--sage-light)">Ease</span></span>
+      <p>India's trusted platform for business registrations, tax compliance, trademark protection, and all things corporate — since 2018.</p>
+      <div style="margin-top:20px;font-family:var(--font-sketch);font-size:18px;color:var(--sage-light)">made with ♥ in India</div>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <a href="#" onclick="showPage('services')">Business Registration</a>
+      <a href="#" onclick="showPage('services')">GST Services</a>
+      <a href="#" onclick="showPage('services')">Trademark & IP</a>
+      <a href="#" onclick="showPage('services')">Income Tax</a>
+      <a href="#" onclick="showPage('services')">MCA Compliance</a>
+      <a href="#" onclick="showPage('services')">HR & Payroll</a>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <a href="#" onclick="showPage('about')">About Us</a>
+      <a href="#" onclick="showPage('pricing')">Pricing</a>
+      <a href="#" onclick="showPage('contact')">Contact</a>
+      <a href="#">Careers</a>
+      <a href="#">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h5>Legal</h5>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Refund Policy</a>
+      <a href="#">Disclaimer</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 CorpEase Pvt. Ltd. All rights reserved. CIN: U74999GJ2018PTC123456</p>
+    <span class="footer-sketch">✦ compliance, simplified</span>
+  </div>
+</footer>
+
+<script>
+function showPage(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
+  const navEl = document.getElementById('nav-'+id);
+  if(navEl) navEl.classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+let isYearly = false;
+const prices = {starter:[1999,1599],growth:[3999,3199],enterprise:[7999,6399]};
+function toggleBilling(){
+  isYearly = !isYearly;
+  const tog = document.getElementById('billing-toggle');
+  tog.classList.toggle('yearly', isYearly);
+  document.getElementById('tog-monthly').classList.toggle('active',!isYearly);
+  document.getElementById('tog-yearly').classList.toggle('active',isYearly);
+  const fmt = n => '₹'+n.toLocaleString('en-IN');
+  const period = isYearly ? 'Billed annually' : 'Billed monthly';
+  const suffix = isYearly ? '/mo' : '/mo';
+  document.getElementById('price-starter').innerHTML = fmt(prices.starter[isYearly?1:0])+'<span>'+suffix+'</span>';
+  document.getElementById('price-growth').innerHTML = fmt(prices.growth[isYearly?1:0])+'<span style="font-weight:300;color:rgba(255,255,255,.7)">'+suffix+'</span>';
+  document.getElementById('price-enterprise').innerHTML = fmt(prices.enterprise[isYearly?1:0])+'<span>'+suffix+'</span>';
+  ['starter','growth','enterprise'].forEach(k=>{document.getElementById('period-'+k).textContent=period;});
+}
+
+function handleFormSubmit(){
+  const btn = document.querySelector('.form-submit');
+  btn.textContent = '✓ Message sent! We\'ll be in touch soon.';
+  btn.style.background = '#3a6547';
+  btn.disabled = true;
+  setTimeout(()=>{btn.textContent='Send Message →';btn.style.background='';btn.disabled=false;},4000);
+}
+</script>
+</body>
+</html>

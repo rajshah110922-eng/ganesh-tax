@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.indiafilings.com)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Read(//c/Users/memon/.claude/projects/e--GTC/memory\" 2>/dev/**)",
+      "Read(//c/Users/memon/.claude/projects/e--GTC/memory/**)",
+      "Bash(git init *)",
+      "Bash(git config *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ],
+    "additionalDirectories": [
+      "e:\\GTC\\.claude"
+    ]
+  }
+}

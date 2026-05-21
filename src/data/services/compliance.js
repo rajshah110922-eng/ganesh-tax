@@ -1,0 +1,190 @@
+export const complianceServices = [
+  {
+    slug: 'payroll-processing',
+    name: 'Payroll Processing',
+    tagline: 'End-to-end monthly payroll management for your team',
+    category: { slug: 'compliance', label: 'Compliance', color: 'rust' },
+    heroDescription: 'Accurate payroll processing is critical for employee satisfaction, statutory compliance, and tax accuracy. Our managed payroll service handles everything — salary computation, TDS, PF/ESI, and payslip generation — every month.',
+    whatIs: 'Payroll processing involves computing employee salaries, deductions (TDS, PF, ESI, professional tax, loans), and disbursements on a monthly basis. It includes generating payslips, maintaining attendance records, computing overtime, and ensuring timely payment of all statutory dues.',
+    benefits: [
+      { title: 'Zero Payroll Errors', description: 'Manual payroll calculations lead to costly errors. Our automated, CA-reviewed process ensures 100% accuracy.' },
+      { title: 'Complete Statutory Compliance', description: 'TDS deduction, PF, ESI, and PT are computed and deposited on time — avoiding penalties and employee complaints.' },
+      { title: 'Employee Self-Service', description: 'Automated payslip generation and Form 16 issuance at year end for all employees.' },
+      { title: 'Saves HR Time', description: 'Outsourcing payroll frees your HR team to focus on recruitment, culture, and strategy.' },
+    ],
+    steps: [
+      { num: 1, title: 'Employee Data Setup', description: 'We collect employee details — CTC structure, PF/ESI applicability, TDS declaration, and bank details.' },
+      { num: 2, title: 'Monthly Attendance & Variable Pay', description: 'Attendance, leaves, overtime, and variable pay components are submitted by your HR by the 25th of each month.' },
+      { num: 3, title: 'Payroll Computation', description: 'Gross salary, deductions (TDS, PF, ESI, PT), and net pay are computed for each employee.' },
+      { num: 4, title: 'Payslips & Compliance', description: 'Payslips are generated and shared. PF, ESI, and TDS challans are prepared for timely payment.' },
+    ],
+    documents: [
+      'Employee master data (name, PAN, Aadhaar, bank details)',
+      'CTC structure / offer letters',
+      'Monthly attendance data',
+      'Tax declaration forms from employees (for TDS computation)',
+      'Investment proofs submitted by employees (at year end)',
+    ],
+    faqs: [
+      { question: 'Is PF applicable to all businesses?', answer: 'PF (Provident Fund) is mandatory for establishments with 20 or more employees. Voluntary registration is possible for smaller organisations.' },
+      { question: 'What is the PF contribution rate?', answer: 'Both employer and employee contribute 12% of the employee\'s basic salary to PF. For organisations with < 20 employees, lower rates may apply.' },
+      { question: 'Is ESI applicable to all employees?', answer: 'ESI is applicable to employees earning up to ₹21,000/month in establishments covered under the ESI Act. The employer contributes 3.25% and employee contributes 0.75% of gross wages.' },
+    ],
+    pricing: {
+      plans: [
+        { name: 'Starter (up to 10)', price: 2999, features: ['Monthly Payroll', 'Payslip Generation', 'TDS Computation', 'PF/ESI Challan'] },
+        { name: 'Growth (up to 25)', price: 4999, features: ['Everything in Starter', 'PT Computation', 'Form 16 Issuance (Year End)', 'HR Advisory'] },
+        { name: 'Scale (up to 50)', price: 7999, features: ['Everything in Growth', 'Leave Management', 'Dedicated Payroll Manager', 'ESOP / Variable Pay Support'] },
+      ],
+    },
+  },
+  {
+    slug: 'pf-esi-registration',
+    name: 'PF & ESI Registration',
+    tagline: 'Set up Provident Fund and ESIC registrations for your business',
+    category: { slug: 'compliance', label: 'Compliance', color: 'rust' },
+    heroDescription: 'PF and ESI are mandatory social security contributions for employees. Setting them up correctly from the start — with proper code allocation, establishment registration, and monthly compliance — protects both your employees and your business.',
+    whatIs: 'The Employees\' Provident Fund Organisation (EPFO) and Employees\' State Insurance Corporation (ESIC) are government bodies that manage retirement savings (PF) and health insurance (ESI) for employees. Establishments with 20+ employees must register under PF, and those with 10+ employees (earning ≤₹21,000/month) must register under ESI.',
+    benefits: [
+      { title: 'Employee Welfare', description: 'PF ensures retirement savings; ESI provides medical care and cash benefits during illness, maternity, and disability.' },
+      { title: 'Attract & Retain Talent', description: 'PF and ESI are key employee benefits. Offering them helps attract and retain quality employees.' },
+      { title: 'Legal Compliance', description: 'Non-registration and non-remittance attract 12–18% interest plus penalties and prosecution under respective Acts.' },
+      { title: 'Tax Deduction for Employer', description: 'Employer\'s PF and ESI contributions are allowable business expenditure, reducing the company\'s taxable income.' },
+    ],
+    steps: [
+      { num: 1, title: 'EPFO Registration', description: 'Register on the EPFO Unified Portal. Obtain PF Establishment Code and link with the company\'s bank account.' },
+      { num: 2, title: 'ESIC Registration', description: 'Register on the ESIC portal. Obtain Employer Code and Employee Insurance Numbers for covered employees.' },
+      { num: 3, title: 'Employee Onboarding', description: 'Add employee details on EPFO and ESIC portals. Existing UAN/ESIC numbers are linked for existing employees.' },
+      { num: 4, title: 'Monthly ECR & Challan', description: 'We generate Electronic Challan cum Return (ECR) for PF and submit monthly returns on ESIC portal.' },
+    ],
+    documents: [
+      'Company registration certificate or PAN',
+      'Address proof of the establishment',
+      'List of employees with salary, DOB, DOJ, Aadhaar, and bank details',
+      'DSC of the authorised signatory',
+      'Bank account details',
+      'Number of employees covered',
+    ],
+    faqs: [
+      { question: 'Can a startup voluntarily register for PF with fewer than 20 employees?', answer: 'Yes. Voluntary PF registration is allowed for establishments with fewer than 20 employees. This can be beneficial to attract quality talent.' },
+      { question: 'What is UAN?', answer: 'UAN (Universal Account Number) is a unique 12-digit number allotted by EPFO to each employee. It stays the same across employment changes, allowing seamless PF transfer and withdrawal.' },
+    ],
+    pricing: {
+      plans: [
+        { name: 'PF Only', price: 2499, features: ['EPFO Registration', 'PF Code Allocation', 'Employee Onboarding (up to 10)', 'First Month ECR'] },
+        { name: 'ESI Only', price: 1999, features: ['ESIC Registration', 'Employer Code', 'Employee Insurance Numbers (up to 10)'] },
+        { name: 'PF + ESI Bundle', price: 3999, features: ['Both EPFO + ESIC Registration', 'Employee Onboarding (up to 20)', 'First Month Returns', 'Compliance Calendar'] },
+      ],
+    },
+  },
+  {
+    slug: 'labour-law-compliance',
+    name: 'Labour Law Compliance',
+    tagline: 'End-to-end statutory compliance management for your establishment',
+    category: { slug: 'compliance', label: 'Compliance', color: 'rust' },
+    heroDescription: 'Indian businesses must comply with multiple central and state labour laws — PF, ESI, Professional Tax, Gratuity, Minimum Wages, Shops Act, and more. Our compliance team manages all of this so you can focus on your business.',
+    whatIs: 'Labour law compliance encompasses adherence to various legislation governing the employer-employee relationship — the Factories Act, Minimum Wages Act, Payment of Bonus Act, Maternity Benefit Act, Contract Labour Act, and the new Labour Codes (Wages, Industrial Relations, Social Security, Occupational Safety). Non-compliance can lead to inspections, fines, and criminal prosecution.',
+    benefits: [
+      { title: 'Comprehensive Coverage', description: 'We track and manage compliance under all applicable central and state labour laws for your specific industry and workforce.' },
+      { title: 'Reduce Inspector Risk', description: 'Proper compliance documentation reduces the risk of adverse findings during labour department inspections.' },
+      { title: 'Employee Trust', description: 'A compliant workplace fosters employee trust, reduces disputes, and minimises attrition.' },
+      { title: 'Zero-Penalty Record', description: 'Timely filing of all returns and payment of all statutory dues ensures a clean compliance record.' },
+    ],
+    steps: [
+      { num: 1, title: 'Compliance Audit', description: 'We audit your current compliance status across all applicable labour laws and identify gaps.' },
+      { num: 2, title: 'Registration Gap Closure', description: 'We complete any pending registrations — Trade License, S&E, PF, ESI, PT, etc.' },
+      { num: 3, title: 'Monthly Compliance Management', description: 'Monthly PF ECR, ESI return, PT challan, and other periodic filings are managed.' },
+      { num: 4, title: 'Annual Returns', description: 'Annual returns under Minimum Wages Act, Factories Act, Contract Labour Act, etc. are filed with respective authorities.' },
+    ],
+    documents: [
+      'Company registration documents',
+      'Details of all employees (full-time, part-time, contract)',
+      'Salary register and attendance records',
+      'Existing registration certificates (PF, ESI, PT, Trade License)',
+      'Nature of business and industry type',
+    ],
+    faqs: [
+      { question: 'What are the new Labour Codes?', answer: 'The government has consolidated 29 central labour laws into 4 Labour Codes: Wages, Industrial Relations, Social Security, and Occupational Safety. Implementation is pending state rules notification.' },
+      { question: 'Is a compliance audit mandatory?', answer: 'Not legally mandatory, but highly advisable before a labour department inspection to identify and close compliance gaps proactively.' },
+    ],
+    pricing: {
+      plans: [
+        { name: 'Startup (up to 10 emp)', price: 3999, features: ['Monthly PF + ESI + PT', 'Annual Returns', 'Compliance Calendar', 'Query Support'] },
+        { name: 'Growth (10–50 emp)', price: 7999, features: ['Full Monthly Compliance', 'Annual Returns (all acts)', 'Inspection Support', 'Dedicated Compliance Manager'] },
+        { name: 'Enterprise', price: 14999, features: ['Multi-location Compliance', 'Factory Act', 'Contract Labour Management', 'Legal Advisory'] },
+      ],
+    },
+  },
+  {
+    slug: 'professional-tax-compliance',
+    name: 'Professional Tax Compliance',
+    tagline: 'Monthly PT returns and compliance management for your business',
+    category: { slug: 'compliance', label: 'Compliance', color: 'rust' },
+    heroDescription: 'Professional Tax (PT) must be deducted from employee salaries and remitted monthly to the state government. Our compliance team manages your monthly PT challan, annual returns, and PTRC filings without fail.',
+    whatIs: 'Professional Tax is a state-level levy on employment income. Employers must deduct PT from employees\' salaries based on applicable slabs and remit to the state treasury monthly. Annual PT returns must also be filed. States with PT include Maharashtra, Karnataka, West Bengal, Tamil Nadu, Andhra Pradesh, and others.',
+    benefits: [
+      { title: 'Avoid Penalties', description: 'Late payment of PT attracts interest (1–2% per month) and penalty. We ensure zero late payments.' },
+      { title: 'Employee Deduction Benefit', description: 'PT paid by employees is deductible from their taxable income under Section 16(iii) of the Income Tax Act.' },
+      { title: 'Annual Return Compliance', description: 'Annual PT returns must be filed with state authority. We manage all periodic filings automatically.' },
+    ],
+    steps: [
+      { num: 1, title: 'PT Slab Application', description: 'We apply the correct state-specific PT slab to each employee\'s monthly salary and compute deductions.' },
+      { num: 2, title: 'Monthly Challan', description: 'PT is deducted from employee salaries. Monthly challan is prepared and filed with the state PT department.' },
+      { num: 3, title: 'Annual Return', description: 'Annual PT return (PTRC) is filed with the state authority by the prescribed deadline.' },
+      { num: 4, title: 'PT Certificate Maintenance', description: 'PTEC and PTRC certificates are renewed as required. New employees are added to PT rolls.' },
+    ],
+    documents: [
+      'Employee salary data for the month',
+      'Existing PTEC and PTRC registration details',
+      'Bank account for challan payment',
+    ],
+    faqs: [
+      { question: 'Is PT the same in all states?', answer: 'No. Each state has its own PT slab structure, due dates, and return formats. Maharashtra has different slabs than Karnataka or Tamil Nadu.' },
+    ],
+    pricing: {
+      plans: [
+        { name: 'Monthly (up to 25 emp)', price: 999, features: ['Monthly PT Deduction Computation', 'Challan Preparation', 'Annual PTRC Return'] },
+        { name: 'Annual Pack', price: 7999, features: ['12 Months Monthly PT', 'Annual Return', 'New Employee Addition', 'Certificate Management'] },
+      ],
+    },
+  },
+  {
+    slug: 'statutory-compliance-audit',
+    name: 'Statutory Compliance Audit',
+    tagline: 'Annual audit of all labour and statutory compliances for your business',
+    category: { slug: 'compliance', label: 'Compliance', color: 'rust' },
+    heroDescription: 'A statutory compliance audit identifies gaps in your compliance posture across all applicable labour laws, tax laws, and corporate laws. Conducted annually, it protects you from regulatory risk and ensures you\'re always inspection-ready.',
+    whatIs: 'A Statutory Compliance Audit is a systematic review of an organisation\'s compliance with applicable laws — labour laws (PF, ESI, PT, Minimum Wages, Factories Act), corporate laws (Companies Act, MCA filings), tax laws (GST, Income Tax, TDS), and environmental and sector-specific regulations.',
+    benefits: [
+      { title: 'Identify Compliance Gaps', description: 'Discover missing registrations, unfiled returns, and underpaid dues before they become enforcement actions.' },
+      { title: 'Inspection Readiness', description: 'Be prepared for any surprise inspection by labour officers, GST officers, or MCA with all records in order.' },
+      { title: 'Risk Mitigation', description: 'Proactively addressing compliance gaps reduces the risk of penalties, prosecution, and reputational damage.' },
+      { title: 'Board Confidence', description: 'A clean compliance audit report gives the board and investors confidence in the management\'s governance.' },
+    ],
+    steps: [
+      { num: 1, title: 'Pre-Audit Document Collection', description: 'All registration certificates, return filings, challans, and contracts for the audit period are collected.' },
+      { num: 2, title: 'Multi-Law Review', description: 'Our compliance team reviews labour, tax, corporate, and sector-specific compliance simultaneously.' },
+      { num: 3, title: 'Gap Analysis Report', description: 'A detailed gap analysis report identifies areas of non-compliance with specific recommendations.' },
+      { num: 4, title: 'Remediation Support', description: 'We assist in closing identified gaps — pending registrations, unfiled returns, late fee payment, and amnesty filings.' },
+    ],
+    documents: [
+      'All current registration certificates',
+      'Last 3 years\' return filings (GST, TDS, PF, ESI, PT)',
+      'Audited financial statements',
+      'Employee master data',
+      'Contracts with contractors and vendors',
+      'Company policies (HR, leave, salary, etc.)',
+    ],
+    faqs: [
+      { question: 'How often should a statutory compliance audit be done?', answer: 'Annually is recommended. Growing companies (crossing 20/50 employees threshold) should also conduct an audit when these thresholds are crossed.' },
+      { question: 'Does a compliance audit create obligation to report violations?', answer: 'Auditors do not proactively report findings to authorities. The report is for internal use. We help you remediate gaps before they are discovered externally.' },
+    ],
+    pricing: {
+      plans: [
+        { name: 'Startup Audit', price: 9999, features: ['Up to 20 employees', 'Labour Law + Tax + MCA Review', 'Gap Analysis Report', 'Remediation Guidance'] },
+        { name: 'Growth Audit', price: 19999, features: ['20–100 employees', 'Multi-location if applicable', 'Compliance Score Card', 'Full Remediation Support'] },
+        { name: 'Enterprise Audit', price: 39999, features: ['100+ employees', 'All applicable laws', 'Board-level Report', 'Ongoing Compliance Tracking'] },
+      ],
+    },
+  },
+]

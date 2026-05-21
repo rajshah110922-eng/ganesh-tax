@@ -1,0 +1,225 @@
+export const trademarkServices = [
+  {
+    slug: 'trademark-registration',
+    name: 'Trademark Registration',
+    tagline: 'Protect your brand name, logo, or tagline with a registered trademark',
+    category: { slug: 'trademark', label: 'Trademark', color: 'gold' },
+    heroDescription: 'A registered trademark gives your brand exclusive rights to use the mark across India. It prevents competitors from copying your name, logo, or tagline, and is one of the most valuable business assets you can own.',
+    whatIs: 'A trademark is any word, name, symbol, logo, slogan, or combination that distinguishes your goods or services from others. Registered under the Trade Marks Act, 1999 with the Trade Marks Registry, a trademark registration gives you exclusive rights for 10 years (renewable indefinitely). The ® symbol can only be used after successful registration.',
+    benefits: [
+      { title: 'Exclusive Rights', description: 'Once registered, you have the exclusive right to use the mark in India for your class of goods/services. Others cannot legally copy it.' },
+      { title: 'Legal Protection', description: 'Registered trademark owners can take legal action (civil or criminal) against infringers. Unregistered marks have no statutory protection.' },
+      { title: 'Brand Asset', description: 'A trademark is an intellectual property asset that can be sold, licensed, or franchised — often worth more than physical assets.' },
+      { title: 'Consumer Trust', description: 'The ® symbol signals authenticity and builds consumer confidence in your brand quality.' },
+    ],
+    steps: [
+      { num: 1, title: 'Trademark Search', description: 'We conduct a comprehensive search on the IP India trademark database to check for identical or similar marks in your class.' },
+      { num: 2, title: 'Application Filing', description: 'We prepare and file TM-A application with detailed descriptions of goods/services and the trademark class.' },
+      { num: 3, title: 'Examination', description: 'The Trademark Registry examines the application. If objected, we file a reply to the examination report.' },
+      { num: 4, title: 'Publication & Registration', description: 'The mark is published in the Trade Marks Journal. If unopposed for 4 months, the registration certificate is issued.' },
+    ],
+    documents: [
+      'Logo or brand name in standard characters (JPG format)',
+      'PAN Card of the applicant',
+      'Aadhaar / Passport of individual applicants',
+      'Certificate of Incorporation (for companies)',
+      'Signed Form-48 (authorisation to file on behalf)',
+      'Description of goods or services',
+    ],
+    faqs: [
+      { question: 'How long does trademark registration take?', answer: 'The full registration process takes 18–24 months. However, filing the application immediately gives you TM™ pending status and constructive notice of your claim.' },
+      { question: 'What is a trademark class?', answer: 'Goods and services are divided into 45 international classes (Nice Classification). You must file in the correct class(es). Filing in multiple classes requires separate fees per class.' },
+      { question: 'Can I use the ® symbol immediately?', answer: 'No. The ® symbol can only be used after successful registration. The ™ symbol can be used once the application is filed.' },
+      { question: 'What happens if someone objects to my trademark?', answer: 'The objector files a Notice of Opposition. We represent you in the opposition proceedings with evidence and arguments.' },
+    ],
+    pricing: {
+      plans: [
+        { name: 'Basic', price: 6999, features: ['Trademark Search', 'Single-class Filing', 'Application Tracking', 'Government Fee Included (MSME rate)'] },
+        { name: 'Standard', price: 9999, features: ['Everything in Basic', 'Examination Reply (1 round)', 'Trademark Monitoring Software Access'] },
+        { name: 'Premium', price: 14999, features: ['Everything in Standard', 'Opposition Handling', 'Multi-class (up to 3)', 'Dedicated IP Attorney'] },
+      ],
+    },
+  },
+  {
+    slug: 'trademark-search',
+    name: 'Trademark Search',
+    tagline: 'Check availability before filing to avoid conflicts and objections',
+    category: { slug: 'trademark', label: 'Trademark', color: 'gold' },
+    heroDescription: 'A thorough trademark search before filing saves you time, money, and legal headaches. Our expert search covers identical and phonetically similar marks across all relevant classes on the official IP India database.',
+    whatIs: 'A trademark search is an investigation of the IP India Trade Marks Registry to determine if a mark similar to yours is already registered or pending. It covers word marks, device marks (logos), and combinations. A good search also includes common law marks used but not registered.',
+    benefits: [
+      { title: 'Avoid Rejection', description: 'Filing without a search risks rejection due to conflict with existing marks — wasting filing fees and months of waiting.' },
+      { title: 'Avoid Litigation', description: 'Using an existing trademark without knowing could result in costly infringement lawsuits.' },
+      { title: 'Informed Decision', description: 'A search report helps you make an informed decision — proceed with the mark, modify it, or choose an alternative.' },
+      { title: 'Fast Turnaround', description: 'Our trademark search reports are delivered within 24 hours of receiving your request.' },
+    ],
+    steps: [
+      { num: 1, title: 'Share Your Mark', description: 'Send us your proposed brand name, logo, or tagline along with the class of goods/services.' },
+      { num: 2, title: 'Database Search', description: 'We search the IP India database for identical, similar, and phonetically equivalent marks in your class.' },
+      { num: 3, title: 'Comprehensive Analysis', description: 'Our attorneys analyse the results, including marks that are registered, pending, opposed, or abandoned.' },
+      { num: 4, title: 'Detailed Report', description: 'You receive a detailed search report with risk assessment and our recommendation within 24 hours.' },
+    ],
+    documents: [
+      'Proposed trademark (name, logo, or both)',
+      'Class of goods or services (if known)',
+      'PAN Card (for filing purposes)',
+    ],
+    faqs: [
+      { question: 'Is a trademark search 100% accurate?', answer: 'No search can guarantee 100% accuracy due to common law marks and unregistered trademarks. Our search covers the official registry comprehensively.' },
+      { question: 'Can I skip the search and file directly?', answer: 'Technically yes, but it is strongly discouraged. Without a search, you risk a ₹2,000+ filing fee being wasted on an application that gets rejected.' },
+    ],
+    pricing: {
+      plans: [
+        { name: 'Basic', price: 999, features: ['1 Class Search', 'IP India Database Search', 'PDF Report in 24 Hours'] },
+        { name: 'Comprehensive', price: 1999, features: ['Up to 3 Classes', 'Phonetically Similar Mark Analysis', 'Risk Assessment', 'Filing Recommendation'] },
+      ],
+    },
+  },
+  {
+    slug: 'trademark-renewal',
+    name: 'Trademark Renewal',
+    tagline: 'Renew your trademark protection before it lapses',
+    category: { slug: 'trademark', label: 'Trademark', color: 'gold' },
+    heroDescription: 'A registered trademark is valid for 10 years from the date of filing. Renewal must be done within 6 months before expiry (or within a grace period). Don\'t let years of brand building go to waste — let us manage your trademark renewal.',
+    whatIs: 'Under the Trade Marks Act, 1999, a registered trademark can be renewed indefinitely every 10 years by filing Form TM-R and paying the prescribed fee. If the renewal is not done before expiry, there is a 6-month grace period with a surcharge. After the grace period, the mark is removed from the register and can be re-applied for by anyone.',
+    benefits: [
+      { title: 'Perpetual Protection', description: 'With timely renewals, your trademark can be protected indefinitely — your brand remains exclusively yours.' },
+      { title: 'Avoid Expensive Re-filing', description: 'Missing the renewal window means starting the entire registration process again, costing more time and money.' },
+      { title: 'Maintain Brand Asset Value', description: 'A continuously registered trademark retains its monetary value as a licensable and assignable IP asset.' },
+    ],
+    steps: [
+      { num: 1, title: 'Renewal Due Date Check', description: 'We check your trademark registration certificate for the expiry date and upcoming renewal deadline.' },
+      { num: 2, title: 'Form TM-R Preparation', description: 'We prepare Form TM-R with the correct trademark details and class for renewal.' },
+      { num: 3, title: 'Fee Payment & Filing', description: 'The renewal application with government fee is filed with the Trade Marks Registry.' },
+      { num: 4, title: 'Renewal Certificate', description: 'Upon processing, the renewal certificate is issued extending protection for another 10 years.' },
+    ],
+    documents: [
+      'Original trademark registration certificate',
+      'PAN Card of the trademark owner',
+      'Power of Attorney (if filing through agent)',
+      'Any changes to goods/services description (if applicable)',
+    ],
+    faqs: [
+      { question: 'Can a trademark be renewed after expiry?', answer: 'Yes, within a 6-month grace period after expiry (with an additional surcharge fee). After that, the mark is removed and must be re-applied for.' },
+      { question: 'Can the goods/services class be changed during renewal?', answer: 'No, the class of goods/services cannot be changed during renewal. A fresh application must be filed for new classes.' },
+    ],
+    pricing: {
+      plans: [
+        { name: 'Basic', price: 4999, features: ['Form TM-R Filing', 'Government Fee Included (MSME rate)', 'Renewal Certificate'] },
+        { name: 'Standard', price: 6999, features: ['Everything in Basic', 'Trademark Watch Service (1 Year)', 'Class Addition Advisory'] },
+      ],
+    },
+  },
+  {
+    slug: 'copyright-registration',
+    name: 'Copyright Registration',
+    tagline: 'Protect your original creative works with a Copyright Certificate',
+    category: { slug: 'trademark', label: 'Trademark', color: 'gold' },
+    heroDescription: 'Copyright automatically vests in the creator of an original work, but registering it with the Copyright Office creates a legal record and provides a presumption of ownership — invaluable in infringement disputes.',
+    whatIs: 'Under the Copyright Act, 1957, copyright protection is automatic upon creation of an original work. However, registration with the Copyright Office (under the Ministry of Education) creates official evidence of ownership, makes enforcement easier, and is often required by publishers, studios, and licensing companies.',
+    benefits: [
+      { title: 'Legal Evidence', description: 'A copyright certificate creates a public record of your authorship and ownership date — crucial in infringement disputes.' },
+      { title: 'Easier Licensing', description: 'Publishers, investors, and partners prefer to license from registered copyright owners as it reduces their legal risk.' },
+      { title: 'Monetary Relief', description: 'Registered copyright owners can claim statutory damages and legal costs in infringement cases — making enforcement worthwhile.' },
+      { title: 'Wide Coverage', description: 'Copyright covers literary works, music, films, software code, websites, artistic works, architectural drawings, and more.' },
+    ],
+    steps: [
+      { num: 1, title: 'Work Classification', description: 'We determine the category of your work (literary, musical, artistic, cinematograph, software, etc.) and the appropriate form.' },
+      { num: 2, title: 'Application Filing', description: 'We file the copyright application on the Copyright Office portal with the necessary statement of particulars.' },
+      { num: 3, title: 'Mandatory Waiting Period', description: 'There is a 30-day mandatory waiting period for objections. We monitor the application status.' },
+      { num: 4, title: 'Certificate Issuance', description: 'If no objections are received, the Copyright Certificate is issued by the Copyright Registrar.' },
+    ],
+    documents: [
+      'Details of the work (title, year of creation, description)',
+      'Copy of the work to be registered (2 copies)',
+      'PAN Card and Aadhaar of the author',
+      'NOC from publisher (if applicable)',
+      'Proof of authorship or creation date',
+    ],
+    faqs: [
+      { question: 'How long is copyright protection?', answer: 'For most works, copyright lasts the author\'s lifetime plus 60 years. For government works, anonymous works, and films, different periods apply.' },
+      { question: 'Can I copyright software code?', answer: 'Yes. Software code is classified as a "literary work" under the Copyright Act and can be registered.' },
+    ],
+    pricing: {
+      plans: [
+        { name: 'Basic', price: 3499, features: ['Application Filing', 'Government Fee Included', 'Copyright Certificate'] },
+        { name: 'Standard', price: 5999, features: ['Everything in Basic', 'Licensing Agreement Template', 'Infringement Advisory'] },
+      ],
+    },
+  },
+  {
+    slug: 'patent-filing',
+    name: 'Patent Filing',
+    tagline: 'Protect your invention or innovation with a patent application',
+    category: { slug: 'trademark', label: 'Trademark', color: 'gold' },
+    heroDescription: 'A patent grants you exclusive rights to use, sell, or license your invention for 20 years. Filing a patent application establishes your priority date and protects your innovation from being copied by competitors.',
+    whatIs: 'Under the Patents Act, 1970, an invention can be patented if it is novel (new), inventive (non-obvious), and capable of industrial application. Patents are granted by the Indian Patent Office (IPO). A Provisional Patent Application can be filed first to establish the priority date, followed by a Complete Specification within 12 months.',
+    benefits: [
+      { title: '20-Year Exclusivity', description: 'A granted patent gives you exclusive commercial rights to your invention for 20 years from the filing date.' },
+      { title: 'Establish Priority Date', description: 'Filing a provisional application immediately secures your priority date — even before the full specification is ready.' },
+      { title: 'Licensing Revenue', description: 'Patents can be licensed to other companies for royalty income, creating a passive revenue stream from your innovation.' },
+      { title: 'Investor Confidence', description: 'Patented technology signals defensible competitive advantage, making your startup more attractive to investors.' },
+    ],
+    steps: [
+      { num: 1, title: 'Patentability Search', description: 'We conduct a prior art search to assess if your invention meets the novelty and non-obviousness criteria.' },
+      { num: 2, title: 'Provisional Application', description: 'We file a Provisional Patent Application to secure your priority date immediately.' },
+      { num: 3, title: 'Complete Specification', description: 'Within 12 months, we file the Complete Specification with detailed claims defining the scope of protection.' },
+      { num: 4, title: 'Examination & Grant', description: 'Request for Examination (RFE) is filed. We respond to examiner objections and pursue grant of the patent.' },
+    ],
+    documents: [
+      'Detailed description of the invention',
+      'Drawings or diagrams of the invention (if applicable)',
+      'Claims defining the scope of the invention',
+      'Abstract (brief summary)',
+      'PAN Card and Aadhaar of the inventor',
+      'Assignment deed (if applicant is not the inventor)',
+    ],
+    faqs: [
+      { question: 'What cannot be patented in India?', answer: 'Mathematical methods, mental acts, business methods, computer programs per se, discoveries of natural phenomena, plants/animals, and inventions against public order/morality cannot be patented.' },
+      { question: 'How long does patent grant take in India?', answer: 'Patent grant typically takes 3–5 years from the filing date. However, a priority date is established from Day 1 of provisional filing.' },
+      { question: 'Can I apply for an international patent?', answer: 'India is a signatory to the PCT (Patent Cooperation Treaty). A PCT application can be filed to seek protection in 150+ countries within 30 months from the priority date.' },
+    ],
+    pricing: {
+      plans: [
+        { name: 'Provisional', price: 14999, features: ['Patentability Search', 'Provisional Application', 'Priority Date Secured', 'Government Fee Included'] },
+        { name: 'Complete', price: 24999, features: ['Everything in Provisional', 'Complete Specification Drafting', 'Claims Preparation', 'RFE Filing'] },
+        { name: 'Full Service', price: 39999, features: ['Everything in Complete', 'Examination Response (2 rounds)', 'PCT Application Guidance', 'Dedicated Patent Attorney'] },
+      ],
+    },
+  },
+  {
+    slug: 'design-registration',
+    name: 'Design Registration',
+    tagline: 'Protect the unique visual appearance and aesthetics of your product',
+    category: { slug: 'trademark', label: 'Trademark', color: 'gold' },
+    heroDescription: 'Design registration protects the ornamental or aesthetic aspects of a product — its shape, configuration, pattern, ornamentation, or composition of lines or colours. It gives you exclusive rights to the visual appearance of your product for 10 years.',
+    whatIs: 'Under the Designs Act, 2000, the visual features of a product that give it a unique appearance can be registered. This covers industrial designs — the look of products like furniture, electronics, packaging, jewellery, and fashion accessories. Registration is done with the Indian Patent Office.',
+    benefits: [
+      { title: '10-Year Exclusivity', description: 'Exclusive right to apply the registered design to products in your class for 10 years (extendable by 5 more years).' },
+      { title: 'Prevent Copying', description: 'Competitors cannot legally copy your product\'s visual design. You can take legal action against infringers.' },
+      { title: 'Valuable IP Asset', description: 'Registered designs can be sold, licensed, or used as collateral — adding to your business\'s intangible asset value.' },
+    ],
+    steps: [
+      { num: 1, title: 'Design Documentation', description: 'Prepare photographs or drawings of the design from multiple angles as required by the Design Rules.' },
+      { num: 2, title: 'Class Determination', description: 'We identify the correct design class under the Locarno Classification (Indian Design Classes).' },
+      { num: 3, title: 'Application Filing', description: 'We file Form 1 with the Indian Patent Office along with representations (drawings/photos) of the design.' },
+      { num: 4, title: 'Registration Certificate', description: 'Upon examination and approval, the Design Registration Certificate is issued.' },
+    ],
+    documents: [
+      'Clear photographs or drawings of the design (multiple views)',
+      'Brief description of the design features',
+      'PAN Card and Aadhaar of the applicant',
+      'Priority document (if claiming convention priority)',
+    ],
+    faqs: [
+      { question: 'What is the difference between patent and design registration?', answer: 'Patents protect functional inventions (how something works). Design registration protects aesthetics (how something looks). Both can be applied for the same product.' },
+      { question: 'Does the design need to be new?', answer: 'Yes. The design must not have been published or used publicly anywhere in India before the filing date.' },
+    ],
+    pricing: {
+      plans: [
+        { name: 'Basic', price: 5999, features: ['Design Documentation Review', 'Class Identification', 'Application Filing', 'Government Fee Included'] },
+        { name: 'Standard', price: 8999, features: ['Everything in Basic', 'Examination Response', 'Design Certificate', 'Portfolio Management'] },
+      ],
+    },
+  },
+]
